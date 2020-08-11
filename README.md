@@ -1,4 +1,4 @@
-# Web Encryptor API (Spring Boot Application)
+# Web Encryptor (React Application)
 
 ## Team
 
