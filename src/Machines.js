@@ -3,7 +3,7 @@ import './App.css';
 
 function Machines() {
     return(
-        <div>
+        <div className="Machines">
 
         </div>
     );

@@ -66,3 +66,29 @@
   text-align: center;
   color: rgb(0, 0, 100);
 }
+
+.links{
+  color: white;
+}
+
+.Machines{
+  width: 80%;
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10%;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: rgb(0, 0, 255);
+}
+
+.About{
+  width: 80%;
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10%;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: rgb(0, 0, 255);
+}
