@@ -38,7 +38,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   text-align: center;
-  color: rgb(0, 0, 100);
+  color: rgb(0, 0, 10);
 }
 
 .NameLabel{
@@ -48,7 +48,7 @@
   padding-right: 10%;
   padding-top: 1%;
   padding-bottom: 4%;
-  color: rgb(0, 0, 100);
+  color: rgb(0, 0, 10);
 }
 
 .Lines{
@@ -60,11 +60,11 @@
 
 .TextLines{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
-  color: rgb(0, 0, 100);
+  color: rgb(0, 0, 25);
 }
 
 .links{
@@ -82,7 +82,53 @@
   border-color: rgb(0, 0, 255);
 }
 
-.About{
+.Description{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: rgb(0, 0, 25);
+}
+
+.Machines{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 25);
+}
+
+.MachinesList{
+  font-weight: bolder;
+  font-size: 22px;
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  color: rgb(0, 0, 25);
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.MachinesListUnique{
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 22px;
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  color: rgb(0, 0, 25);
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.MachinesSublist{
+  text-decoration: underline;
+  font-size: 18px;
+  padding-top: 0.1%;
+  padding-bottom: 0.3%;
+  color: rgb(0, 0, 25);
+  margin-left: 6%;
+  margin-right: 3%;
+}
+
+.EnigmaSwissKCommercial{
   width: 80%;
   min-height: 100%;
   background-color: rgb(255, 255, 255);

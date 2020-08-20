@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './Navbar';
 import Home from './Home';
 import Machines from './Machines';
-import About from './About';
+import { EnigmaSwissKCommercial } from './EnigmaSwissKCommercial'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/" exact component={ Home }/>
-          <Route path="/Machines" exact component={ Machines }/>
-          <Route path="/About" exact component={ About }/>
+          <Route path="/machines" exact component={ Machines }/>
+          <Route path="/enigmaswisskcommercial" exact component={ EnigmaSwissKCommercial }/>
         </Switch>
       </div>
     </Router>
