@@ -88,7 +88,6 @@
 }
 
 .MachinesListUnique{
-  text-decoration: underline;
   font-weight: bolder;
   font-size: 22px;
   padding-top: 0.4%;
@@ -98,7 +97,6 @@
 }
 
 .MachinesSublist{
-  text-decoration: underline;
   font-size: 18px;
   padding-top: 0.1%;
   padding-bottom: 0.3%;
@@ -107,6 +105,30 @@
 }
 
 .EnigmaModelTypeOne{
+  width: 80%;
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10%;
+}
+
+.EnigmaModelTypeTwo{
+  width: 80%;
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10%;
+}
+
+.EnigmaModelTypeThree{
+  width: 80%;
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10%;
+}
+
+.EnigmaModelTypeFour{
   width: 80%;
   min-height: 100%;
   background-color: rgb(255, 255, 255);

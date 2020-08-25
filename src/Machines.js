@@ -6,22 +6,38 @@ function Machines() {
     return(
         <div className="Machines">
             <ul>
-                <li className="MachinesListUnique">Enigma 1</li>
+                <Link to="/enigmaone">
+                    <li className="MachinesListUnique">Enigma 1</li>
+                </Link>
                 <hr className="Lines"/>
                 <li className="MachinesList">Enigma M3</li>
                 <hr className="Lines"/>
                 <ul>
-                    <li className="MachinesSublist">Army-use with 6 plugs</li>
-                    <li className="MachinesSublist">Army-use with full plugboard</li>
-                    <li className="MachinesSublist">Navy-use with 7 rotors available</li>
-                    <li className="MachinesSublist">Navy-use with 8 rotors available</li>
+                    <Link to="/enigmaarmyusem3sixplugs">
+                        <li className="MachinesSublist">Army-use with 6 plugs</li>
+                    </Link>
+                    <Link to="/enigmaarmyusem3full">
+                        <li className="MachinesSublist">Army-use with full plugboard</li>
+                    </Link>
+                    <Link to="/enigmanavyuseseven">
+                        <li className="MachinesSublist">Navy-use with 7 rotors available</li>
+                    </Link>
+                    <Link to="/enigmanavyuseeight">
+                        <li className="MachinesSublist">Navy-use with 8 rotors available</li>
+                    </Link>
                 </ul>
                 <li className="MachinesList">Enigma M4</li>
                 <hr className="Lines"/>
                 <ul>
-                    <li className="MachinesSublist">3 rotors operation</li>
-                    <li className="MachinesSublist">4 rotors operation</li>
-                    <li className="MachinesSublist">Plugboard and UKW-D</li>
+                    <Link to="/enigmam4threerotors">
+                        <li className="MachinesSublist">3 rotors operation</li>
+                    </Link>
+                    <Link to="/enigmam4fourrotors">
+                        <li className="MachinesSublist">4 rotors operation</li>
+                    </Link>
+                    <Link to="/enigmam4ukwd">
+                        <li className="MachinesSublist">UKW-D</li>
+                    </Link>
                 </ul>
                 <li className="MachinesList">Enigma Swiss-K</li>
                 <hr className="Lines"/>
