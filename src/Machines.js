@@ -16,7 +16,6 @@ function Machines() {
                     <li className="MachinesSublist">Navy-use with 7 rotors available</li>
                     <li className="MachinesSublist">Navy-use with 8 rotors available</li>
                 </ul>
-                <hr className="Lines"/>
                 <li className="MachinesList">Enigma M4</li>
                 <hr className="Lines"/>
                 <ul>
@@ -24,7 +23,6 @@ function Machines() {
                     <li className="MachinesSublist">4 rotors operation</li>
                     <li className="MachinesSublist">Plugboard and UKW-D</li>
                 </ul>
-                <hr className="Lines"/>
                 <li className="MachinesList">Enigma Swiss-K</li>
                 <hr className="Lines"/>
                 <ul>
@@ -33,7 +31,6 @@ function Machines() {
                         <li className="MachinesSublist">Commercial</li>
                     </Link>
                 </ul>
-                <hr className="Lines"/>
                 <li className="MachinesListUnique">Enigma Railway</li>
                 <hr className="Lines"/>
                 <li className="MachinesListUnique">Enigma Tirpitz</li>
