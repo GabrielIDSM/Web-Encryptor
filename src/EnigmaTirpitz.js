@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 
-class EnigmaSwissKCommercial extends Component {
+class EnigmaTirpitz extends Component {
   constructor(props) {
     super(props)
 
@@ -24,7 +24,7 @@ class EnigmaSwissKCommercial extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmaswisskcommercial', this.state.request)
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmatirpitz', this.state.request)
       .then(response => {
         console.log(response.data.message)
         this.setState({
@@ -111,7 +111,7 @@ class EnigmaSwissKCommercial extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeOne">
-        <p className="MachinesTitles">Enigma Swiss-K Commercial</p>
+        <p className="MachinesTitles">Enigma Tirpitz</p>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="ThreeRotorsSelector">
@@ -120,18 +120,33 @@ class EnigmaSwissKCommercial extends Component {
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
             </select>
             <label>Rotor 2</label>
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
             </select>
             <label>Rotor 3</label>
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
             </select>
           </div>
           <div className="ThreeRotorsAndReflectorWheelSet">
@@ -266,4 +281,4 @@ class EnigmaSwissKCommercial extends Component {
   }
 }
 
-export { EnigmaSwissKCommercial };
+export { EnigmaTirpitz };

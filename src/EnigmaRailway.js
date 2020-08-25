@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 
-class EnigmaSwissKCommercial extends Component {
+class EnigmaRailway extends Component {
   constructor(props) {
     super(props)
 
@@ -24,7 +24,7 @@ class EnigmaSwissKCommercial extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmaswisskcommercial', this.state.request)
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmarailway', this.state.request)
       .then(response => {
         console.log(response.data.message)
         this.setState({
@@ -111,7 +111,7 @@ class EnigmaSwissKCommercial extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeOne">
-        <p className="MachinesTitles">Enigma Swiss-K Commercial</p>
+        <p className="MachinesTitles">Enigma Railway</p>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="ThreeRotorsSelector">
@@ -266,4 +266,4 @@ class EnigmaSwissKCommercial extends Component {
   }
 }
 
-export { EnigmaSwissKCommercial };
+export { EnigmaRailway };

@@ -26,21 +26,33 @@ function Machines() {
                 <li className="MachinesList">Enigma Swiss-K</li>
                 <hr className="Lines"/>
                 <ul>
-                    <li className="MachinesSublist">Air Force</li>
+                    <Link to="/enigmaswisskairforce">
+                        <li className="MachinesSublist">Air Force</li>
+                    </Link>
                     <Link to="/enigmaswisskcommercial">
                         <li className="MachinesSublist">Commercial</li>
                     </Link>
                 </ul>
-                <li className="MachinesListUnique">Enigma Railway</li>
+                <Link to="/enigmarailway">
+                    <li className="MachinesListUnique">Enigma Railway</li>
+                </Link>
                 <hr className="Lines"/>
-                <li className="MachinesListUnique">Enigma Tirpitz</li>
+                <Link to="/enigmatirpitz">
+                    <li className="MachinesListUnique">Enigma Tirpitz</li>
+                </Link>
                 <hr className="Lines"/>
                 <li className="MachinesList">Enigma Zahlwerk</li>
                 <hr className="Lines"/>
                 <ul>
-                    <li className="MachinesSublist">Default</li>
-                    <li className="MachinesSublist">G312</li>
-                    <li className="MachinesSublist">G260</li>
+                    <Link to="/enigmazahlwerkdefault">
+                        <li className="MachinesSublist">Default</li>
+                    </Link>
+                    <Link to="/enigmazahlwerkg312">
+                        <li className="MachinesSublist">G312</li>
+                    </Link>
+                    <Link to="/enigmazahlwerkg260">
+                        <li className="MachinesSublist">G260</li>
+                    </Link>
                 </ul>
             </ul>
         </div>
