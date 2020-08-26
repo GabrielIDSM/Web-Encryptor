@@ -12,9 +12,9 @@ class EnigmaM3SixPlugs extends Component {
         rotorOne: 1,
         rotorTwo: 2,
         rotorThree: 3,
-        rotorOneWheelSet: 1,
-        rotorTwoWheelSet: 2,
-        rotorThreeWheelSet: 3,
+        rotorOneWheelSet: 5,
+        rotorTwoWheelSet: 10,
+        rotorThreeWheelSet: 15,
         plugOneA : 0,
         plugOneB : 25,
         plugTwoA : 1,
@@ -233,8 +233,12 @@ class EnigmaM3SixPlugs extends Component {
         <p className="MachinesTitles">Enigma M3 Army-use with 6 Plugs</p>
         <hr className="Lines" />
         <form className="MachinesForms">
+          <div className="LabelRotors">
+            <label>Rotor 1 Setting</label>
+            <label>Rotor 2 Setting</label>
+            <label>Rotor 3 Setting</label>
+          </div>
           <div className="ThreeRotorsSelector">
-            <label>Rotor 1</label>
             <select id="rotor_1" name="rotorOne" type="number" value={this.state.request.rotorOne} onChange={this.changeR1Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -242,7 +246,6 @@ class EnigmaM3SixPlugs extends Component {
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-            <label>Rotor 2</label>
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -250,7 +253,6 @@ class EnigmaM3SixPlugs extends Component {
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-            <label>Rotor 3</label>
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -259,8 +261,7 @@ class EnigmaM3SixPlugs extends Component {
               <option value="5">5</option>
             </select>
           </div>
-          <div className="ThreeRotorsAndReflectorWheelSet">
-            <label>Set</label>
+          <div className="ThreeRotorsWheelSet">
             <select id="rotor_1_set" name="rotorOneWheelSet" type="number" value={this.state.request.rotorOneWheelSet} onChange={this.changeR1WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -289,7 +290,6 @@ class EnigmaM3SixPlugs extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-            <label>Set</label>
             <select id="rotor_2_set" name="rotorTwoWheelSet" type="number" value={this.state.request.rotorTwoWheelSet} onChange={this.changeR2WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -318,7 +318,6 @@ class EnigmaM3SixPlugs extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-            <label>Set</label>
             <select id="rotor_3_set" name="rotorThreeWheelSet" type="number" value={this.state.request.rotorThreeWheelSet} onChange={this.changeR3WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -348,6 +347,7 @@ class EnigmaM3SixPlugs extends Component {
               <option value="26">26</option>
             </select>
           </div>
+          <hr className="LinesInternal" />
           <div className="PlugboardSix">
             <label>Plug One A</label>
             <select id="plugOneA" name="plugOneA" type="number" value={this.state.request.plugOneA} onChange={this.changePlugOneAHandler}>

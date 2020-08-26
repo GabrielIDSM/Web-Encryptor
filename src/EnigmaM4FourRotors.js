@@ -15,9 +15,9 @@ class EnigmaM4FourRotors extends Component {
         rotorThree: 3,
         rotorFour: 4,
         rotorOneWheelSet: 1,
-        rotorTwoWheelSet: 2,
-        rotorThreeWheelSet: 3,
-        rotorFourWheelSet: 4,
+        rotorTwoWheelSet: 5,
+        rotorThreeWheelSet: 10,
+        rotorFourWheelSet: 15,
         plugOneA : 0,
         plugOneB : 25,
         plugTwoA : 1,
@@ -343,8 +343,13 @@ class EnigmaM4FourRotors extends Component {
         <p className="MachinesTitles">Enigma M4 3 rotors operation</p>
         <hr className="Lines" />
         <form className="MachinesForms">
-          <div className="ThreeRotorsSelector">
-            <label>Rotor 1</label>
+          <div className="LabelRotorsM4">
+            <label>Rotor 1 Setting</label>
+            <label>Rotor 2 Setting</label>
+            <label>Rotor 3 Setting</label>
+            <label>Rotor 4 Setting</label>
+          </div>
+          <div className="FourRotorsSelector">
             <select id="rotor_1" name="rotorOne" type="number" value={this.state.request.rotorOne} onChange={this.changeR1Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -355,7 +360,7 @@ class EnigmaM4FourRotors extends Component {
               <option value="7">7</option>
               <option value="8">8</option>
             </select>
-            <label>Rotor 2</label>
+
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -366,7 +371,7 @@ class EnigmaM4FourRotors extends Component {
               <option value="7">7</option>
               <option value="8">8</option>
             </select>
-            <label>Rotor 3</label>
+
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -377,14 +382,13 @@ class EnigmaM4FourRotors extends Component {
               <option value="7">7</option>
               <option value="8">8</option>
             </select>
-            <label>Rotor 4</label>
+
             <select id="rotor_4" name="rotorFour" type="number" value={this.state.request.rotorFour} onChange={this.changeR4Handler}>
               <option value="4">1</option>
               <option value="5">2</option>
             </select>
           </div>
-          <div className="ThreeRotorsAndReflectorWheelSet">
-            <label>Set</label>
+          <div className="FourRotorsWheelSet">
             <select id="rotor_1_set" name="rotorOneWheelSet" type="number" value={this.state.request.rotorOneWheelSet} onChange={this.changeR1WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -413,7 +417,6 @@ class EnigmaM4FourRotors extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-            <label>Set</label>
             <select id="rotor_2_set" name="rotorTwoWheelSet" type="number" value={this.state.request.rotorTwoWheelSet} onChange={this.changeR2WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -442,7 +445,6 @@ class EnigmaM4FourRotors extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-            <label>Set</label>
             <select id="rotor_3_set" name="rotorThreeWheelSet" type="number" value={this.state.request.rotorThreeWheelSet} onChange={this.changeR3WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -471,7 +473,6 @@ class EnigmaM4FourRotors extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-            <label>Set</label>
             <select id="rotor_4_set" name="rotorFourWheelSet" type="number" value={this.state.request.rotorFourWheelSet} onChange={this.changeR4WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -501,6 +502,7 @@ class EnigmaM4FourRotors extends Component {
               <option value="26">26</option>
             </select>
           </div>
+          <hr className="LinesInternal" />
           <div className="ReflectorM4Div">
             <label>Reflector</label>
             <select id="ref" name="reflector" type="number" value={this.state.request.reflector} onChange={this.changeRefHandler}>
