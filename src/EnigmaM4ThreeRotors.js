@@ -447,7 +447,7 @@ class EnigmaM4ThreeRotors extends Component {
             </select>
           </div>
           <hr className="LinesInternal" />
-          <div className="ReflectorM4Div">
+          <div className="ReflectorDiv">
             <label>Reflector</label>
             <select id="ref" name="reflector" type="number" value={this.state.request.reflector} onChange={this.changeRefHandler}>
               <option value="1">1</option>
@@ -455,6 +455,7 @@ class EnigmaM4ThreeRotors extends Component {
               <option value="3">3</option>
             </select>
           </div>
+          <hr className="LinesInternal" />
           <div className="PlugboardFull">
             <label>Plug One A</label>
             <select id="plugOneA" name="plugOneA" type="number" value={this.state.request.plugOneA} onChange={this.changePlugOneAHandler}>

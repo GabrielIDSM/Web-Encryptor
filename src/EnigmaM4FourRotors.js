@@ -340,10 +340,10 @@ class EnigmaM4FourRotors extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeThree">
-        <p className="MachinesTitles">Enigma M4 3 rotors operation</p>
+        <p className="MachinesTitles">Enigma M4 4 rotors operation</p>
         <hr className="Lines" />
         <form className="MachinesForms">
-          <div className="LabelRotorsM4">
+          <div className="LabelRotors">
             <label>Rotor 1 Setting</label>
             <label>Rotor 2 Setting</label>
             <label>Rotor 3 Setting</label>
@@ -360,7 +360,6 @@ class EnigmaM4FourRotors extends Component {
               <option value="7">7</option>
               <option value="8">8</option>
             </select>
-
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -371,7 +370,6 @@ class EnigmaM4FourRotors extends Component {
               <option value="7">7</option>
               <option value="8">8</option>
             </select>
-
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -382,7 +380,6 @@ class EnigmaM4FourRotors extends Component {
               <option value="7">7</option>
               <option value="8">8</option>
             </select>
-
             <select id="rotor_4" name="rotorFour" type="number" value={this.state.request.rotorFour} onChange={this.changeR4Handler}>
               <option value="4">1</option>
               <option value="5">2</option>
@@ -503,14 +500,14 @@ class EnigmaM4FourRotors extends Component {
             </select>
           </div>
           <hr className="LinesInternal" />
-          <div className="ReflectorM4Div">
+          <div className="ReflectorDiv">
             <label>Reflector</label>
             <select id="ref" name="reflector" type="number" value={this.state.request.reflector} onChange={this.changeRefHandler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+              <option value="4">1</option>
+              <option value="5">2</option>
             </select>
           </div>
+          <hr className="LinesInternal" />
           <div className="PlugboardFull">
             <label>Plug One A</label>
             <select id="plugOneA" name="plugOneA" type="number" value={this.state.request.plugOneA} onChange={this.changePlugOneAHandler}>

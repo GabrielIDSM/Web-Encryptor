@@ -228,7 +228,7 @@ class EnigmaSwissKCommercial extends Component {
           </div>
           <hr className="LinesInternal" />
           <div className="ReflectorDiv">
-            <label>Reflector</label>
+            <label>Reflector Setting</label>
             <select id="ref_set" name="reflectorWheelSet" type="number" value={this.state.request.reflectorWheelSet} onChange={this.changeRefHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -258,7 +258,7 @@ class EnigmaSwissKCommercial extends Component {
               <option value="26">26</option>
             </select>
           </div>
-          
+          <hr className="LinesInternal" />
           <div className="MessageRequestResponse">
             <textarea rows="4" cols="50" name="message" value={this.state.request.message} onChange={this.changeMessageHandler}></textarea>
             <br></br><button type="submit" onClick={this.submitHandler}>Submit</button><br></br>
