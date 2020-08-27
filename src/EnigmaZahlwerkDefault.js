@@ -127,19 +127,19 @@ class EnigmaZahlwerkDefault extends Component {
           </div>
           <div className="ThreeRotorsSelector">
             <select id="rotor_1" name="rotorOne" type="number" value={this.state.request.rotorOne} onChange={this.changeR1Handler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
             </select>
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
             </select>
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
             </select>
           </div>
           <div className="ThreeRotorsWheelSet">

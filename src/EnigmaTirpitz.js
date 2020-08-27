@@ -13,9 +13,9 @@ class EnigmaTirpitz extends Component {
         rotorOne: 1,
         rotorTwo: 2,
         rotorThree: 3,
-        rotorOneWheelSet: 1,
-        rotorTwoWheelSet: 2,
-        rotorThreeWheelSet: 3,
+        rotorOneWheelSet: 5,
+        rotorTwoWheelSet: 10,
+        rotorThreeWheelSet: 15,
         reflectorWheelSet: 1
       },
       responseMessage: ''
@@ -127,34 +127,34 @@ class EnigmaTirpitz extends Component {
           </div>
           <div className="ThreeRotorsSelector">
             <select id="rotor_1" name="rotorOne" type="number" value={this.state.request.rotorOne} onChange={this.changeR1Handler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
+              <option value="4">IV</option>
+              <option value="5">V</option>
+              <option value="6">VI</option>
+              <option value="7">VII</option>
+              <option value="8">VIII</option>
             </select>
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
+              <option value="4">IV</option>
+              <option value="5">V</option>
+              <option value="6">VI</option>
+              <option value="7">VII</option>
+              <option value="8">VIII</option>
             </select>
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
+              <option value="1">I</option>
+              <option value="2">II</option>
+              <option value="3">III</option>
+              <option value="4">IV</option>
+              <option value="5">V</option>
+              <option value="6">VI</option>
+              <option value="7">VII</option>
+              <option value="8">VIII</option>
             </select>
           </div>
           <div className="ThreeRotorsWheelSet">
