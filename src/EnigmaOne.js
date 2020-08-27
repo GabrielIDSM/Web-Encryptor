@@ -312,7 +312,15 @@ class EnigmaOne extends Component {
     return (
       <div className="EnigmaModelTypeTwo">
         <Navbar/>
-        <p className="MachinesTitles">Enigma 1</p>
+        <h2 className="MachinesTitles">Enigma 1</h2>
+        <hr className="Lines" />
+        <h3 className="Description">Enigma I (Roman '1') is an electromechanical cipher machine developed in 1927/29
+         by Chriffrier­maschinen AG (later: Heimsoeth und Rinke) In Berlin (Germany)
+          for the German Army (Reichswehr, later: Wehrmacht) 1 and introduced in 1932.
+          It is based on the chassis of the commercial Enigma D, but has a fixed reflector,
+          and a plugboard (Steckerbrett) at the front. The plugboard was exclusive to
+          the German Armed Forces. The machine was used throughout WWII and is known
+          under various names.</h3>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="LabelRotors">

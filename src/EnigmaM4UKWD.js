@@ -552,7 +552,12 @@ class EnigmaM4UKWD extends Component {
     return (
       <div className="EnigmaModelTypeFour">
         <Navbar/>
-        <p className="MachinesTitles">Enigma M4 with UKW-D</p>
+        <h2 className="MachinesTitles">Enigma M4 with UKW-D</h2>
+        <hr className="Lines" />
+        <h3 className="Description">
+        Enigma M4 was an electromechanical cipher machine, developed during WWII, for use by certain divisions of the Kriegsmarine (German Navy) — in particular for the U-Boats. It was intended as a more secure version of the Enigma M3, which was based on the German Army Enigma I. The M4 played a pivoting role in the Battle of the Atlantic and was introduced unexpected on 2 February 1942, causing great upset with the allied codebreakers at Bletchley Park (BP), where its traffic was known as SHARK. It remained unbroken for nine months until new key sheets were captured. 
+        <br/>During WWII, several attempts were mounted to make Enigma traffic more secure. In January 1944, a field-rewirable reflector, called UKW-D, was introduced by the Luftwaffe (German Air Force). It is little known that a special UKW-D was also developed for the Kriegsmarine (Navy).
+        </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="LabelRotors">

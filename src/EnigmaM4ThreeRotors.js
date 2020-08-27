@@ -322,7 +322,11 @@ class EnigmaM4ThreeRotors extends Component {
     return (
       <div className="EnigmaModelTypeThree">
         <Navbar/>
-        <p className="MachinesTitles">Enigma M4 3 rotors operation</p>
+        <h2 className="MachinesTitles">Enigma M4 3 rotors operation</h2>
+        <hr className="Lines" />
+        <h3 className="Description">
+        Enigma M4 was an electromechanical cipher machine, developed during WWII, for use by certain divisions of the Kriegsmarine (German Navy) — in particular for the U-Boats. It was intended as a more secure version of the Enigma M3, which was based on the German Army Enigma I. The M4 played a pivoting role in the Battle of the Atlantic and was introduced unexpected on 2 February 1942, causing great upset with the allied codebreakers at Bletchley Park (BP), where its traffic was known as SHARK. It remained unbroken for nine months until new key sheets were captured. 
+        </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="LabelRotors">

@@ -52,13 +52,13 @@ class Navbar extends Component {
                 <li className="MachinesListUnique">Tirpitz</li>
               </Link>
               <Link to="/enigmazahlwerkdefault">
-                <li className="MachinesSublist">Zahlwerk</li>
+                <li className="MachinesSublist">Zählwerk</li>
               </Link>
               <Link to="/enigmazahlwerkg312">
-                <li className="MachinesSublist">Zahlwerk - G312</li>
+                <li className="MachinesSublist">Zählwerk - G312</li>
               </Link>
               <Link to="/enigmazahlwerkg260">
-                <li className="MachinesSublist">Zahlwerk - G260</li>
+                <li className="MachinesSublist">Zählwerk - G260</li>
               </Link>
             </ul>
           </li>

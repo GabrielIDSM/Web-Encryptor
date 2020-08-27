@@ -113,7 +113,11 @@ class EnigmaZahlwerkDefault extends Component {
     return (
       <div className="EnigmaModelTypeOne">
         <Navbar/>
-        <p className="MachinesTitles">Enigma Zahlwerk</p>
+        <h2 className="MachinesTitles">Enigma Zählwerk</h2>
+        <hr className="Lines" />
+        <h3 className="Description">
+        The Zählwerk Enigma was developed in 1928 as an improved version of the Enigma D. The machine features a cog-wheel driven wheel stepping mechanism and has a character counter (German: Zählwerk) to the left of the wheels. It was also known as Zählwerksmaschine. A later variant of this machine, the Enigma G (G31) became known as the Abwehr Enigma. 
+        </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="LabelRotors">

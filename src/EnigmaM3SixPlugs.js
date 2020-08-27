@@ -232,7 +232,11 @@ class EnigmaM3SixPlugs extends Component {
     return (
       <div className="EnigmaModelTypeTwo">
         <Navbar/>
-        <p className="MachinesTitles">Enigma M3 Army-use with 6 Plugs</p>
+        <h2 className="MachinesTitles">Enigma M3 Army-use with 6 Plugs</h2>
+        <hr className="Lines" />
+        <h3 className="Description">
+        M1, M2 and M3 were 3-wheel electromechanical cipher machines, generally known as M3, used during WWII by the German Navy (Kriegsmarine). The machine was compatible with the Enigma I used by the Army (Heer) and Air Force (Luftwaffe). After the Wehrmacht had introduced the Enigma I in 1932, the Kriegsmarine followed in 1934 with the introduction of the M1. Although the machine is compatible with the Enigma I, it has some manufacturing differences that are unique to the German Navy.
+        </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="LabelRotors">

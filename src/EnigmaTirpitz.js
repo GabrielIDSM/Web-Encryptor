@@ -113,7 +113,11 @@ class EnigmaTirpitz extends Component {
     return (
       <div className="EnigmaModelTypeOne">
         <Navbar/>
-        <p className="MachinesTitles">Enigma Tirpitz</p>
+        <h2 className="MachinesTitles">Enigma Tirpitz</h2>
+        <hr className="Lines" />
+        <h3 className="Description">
+        The Enigma T, codenamed Tirpitz, was an Enigma cipher machine developed during WWII by the Germans especially for use by the Japanese Army. It was based on the commercial Enigma K, but had differently wired wheels (and ETW) and multiple turnovers on each wheel. Furthermore, it had an Eintrittswalze (ETW) that was wired differently from all other Enigma machines.
+        </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
           <div className="LabelRotors">
