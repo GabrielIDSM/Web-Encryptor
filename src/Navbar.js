@@ -10,10 +10,10 @@ class Navbar extends Component {
       <p className="Title"><b>Web Encryptor</b></p>
       <ul className="Navlinks">
         <Link className="links" to="/">
-          <li>Home</li>
+          <li>HOME</li>
         </Link>
         <div className="links">
-          <li><label>Machines</label>
+          <li><label>MACHINES</label>
             <ul>
               <Link to="/enigmaone">
                 <li className="MachinesListUnique">One</li>

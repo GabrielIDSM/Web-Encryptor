@@ -1,9 +1,51 @@
 .Home{
   width: 80%;
-  min-height: 105%;
-  background-color: white;
+  min-height: 100%;
   position: absolute;
   left: 10%;
+  background-color: rgb(0, 0, 85);
+}
+
+.MainDivHome{
+  background-color: rgb(0, 0, 85);
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: white;
+}
+
+.MainDivHome h1{
+  font-size: 74px;
+  padding: 4% 5% 4% 5%;
+  text-transform: capitalize;
+}
+
+.MainDivHome h2{
+  font-size: 24px;
+  padding: 1% 5% 1% 5%;
+  text-align: justify;
+}
+
+.MainDivHome ul{
+  padding: 1% 5% 2% 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainDivHome ul li{
+  text-transform: uppercase;
+  width: 30%;
+  text-align: center;
+  display: block;
+  padding: 4px 0px 4px 0px;
+  background-color: rgb(0, 90, 255);
+}
+
+.MainDivHome a{
+  color: white;
+  display: block;
 }
 
 .Lines{

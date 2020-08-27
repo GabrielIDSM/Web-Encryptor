@@ -7,9 +7,15 @@ class Home extends Component {
         return (
             <div className="Home">
                 <Navbar />
-                <h1 className="TextLines">Learn about the Enigma Machine, Cryptography and Simulators with Web Encryptor!</h1>
-                <hr className="Lines" />
-                <h2 className="Description">The <b>Web Encryptor</b> is a project developed to teach about the Enigma machines and cryptography. The project has 7 machines available and 15 ways to use them. Go ahead, enjoy!</h2>
+                <div className="MainDivHome">
+                    <h1>Learn about the enigma machine and cryptography with web encryptor!</h1>
+                    <h2>The Web Encryptor is a personal project developed by Gabriel Inácio. The project has 7 machines available and 15 ways to use them. </h2>
+                    <ul>
+                        <li><a href="https://github.com/GabrielIDSM">Github Personal Profile</a></li>
+                        <li><a href="https://github.com/GabrielIDSM/Web-Encryptor">Project Page</a></li>
+                        <li><a href="https://github.com/GabrielIDSM/Web-Encryptor-API">API Project Page</a></li>
+                    </ul>
+                </div>
             </div>
         );
     }

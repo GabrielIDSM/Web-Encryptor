@@ -23,7 +23,7 @@
 
   .links li{
     display: block;
-    padding: 15px;
+    padding: 10px;
   }
   
   .Title{
@@ -32,7 +32,7 @@
   }
 
   .links li ul{
-    padding: 0px;
+    padding: 3px;
     font-size: 15px;
     font-weight: bolder;
     position: absolute;
