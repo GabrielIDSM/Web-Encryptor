@@ -1,0 +1,57 @@
+.Navbar{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 90, 255);
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .Navlinks{
+    width: fit-content;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .links li:hover{
+    background: rgb(100, 190, 255);
+  }
+
+  .links li{
+    display: block;
+    padding: 15px;
+  }
+  
+  .Title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+  }
+
+  .links li ul{
+    padding: 0px;
+    font-size: 15px;
+    font-weight: bolder;
+    position: absolute;
+    min-width: max-content;
+    min-height: max-content;
+    display: none;
+    background: rgb(100, 190, 255);
+  }
+
+  .links li ul li{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+  }
+
+  .links li:hover ul{
+    display: block;
+  }
+
+  .links li:hover ul li:hover{
+    background: rgb(110, 200, 255);
+  }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navbar } from './Navbar';
 import './App.css';
 import axios from 'axios';
 
@@ -310,6 +311,7 @@ class EnigmaM3NavyUseEightRotors extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeTwo">
+        <Navbar/>
         <p className="MachinesTitles">Enigma M3 Navy-use 8 rotors</p>
         <hr className="Lines" />
         <form className="MachinesForms">

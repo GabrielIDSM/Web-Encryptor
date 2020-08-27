@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavBar from './Navbar';
-import Home from './Home';
-import Machines from './Machines';
+import { Home } from './Home';
 import { EnigmaSwissKCommercial } from './EnigmaSwissKCommercial'
 import { EnigmaSwissKAirForce } from './EnigmaSwissKAirForce'
 import { EnigmaRailway } from './EnigmaRailway'
@@ -24,10 +22,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar />
         <Switch>
           <Route path="/" exact component={ Home }/>
-          <Route path="/machines" exact component={ Machines }/>
           <Route path="/enigmaswisskcommercial" exact component={ EnigmaSwissKCommercial }/>
           <Route path="/enigmaswisskairforce" exact component={ EnigmaSwissKAirForce }/>
           <Route path="/enigmarailway" exact component={ EnigmaRailway }/>
