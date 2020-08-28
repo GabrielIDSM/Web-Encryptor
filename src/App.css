@@ -139,6 +139,7 @@
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
+  appearance: none;
 }
 
 .ThreeRotorsWheelSet{
@@ -161,6 +162,7 @@
 
 .LabelRotors label{
   width: 16%;
+  height: fit-content;
   text-align: center;
 }
 
@@ -170,6 +172,7 @@
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
+  appearance: none;
 }
 
 .FourRotorsSelector{
@@ -186,6 +189,7 @@
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
+  appearance: none;
 }
 
 .FourRotorsWheelSet{
@@ -202,11 +206,13 @@
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
+  appearance: none;
 }
 
 .ReflectorDiv{
   margin: 1% 5% 1% 5%;
   padding: 0% 2% 0% 2%;
+  font-size: 1.3vw;
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -261,6 +267,7 @@
 
 .FivePlugsTitle label{
   width: 16%;
+  height: fit-content;
   text-align: center;
 }
 
@@ -282,6 +289,7 @@
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
+  appearance: none;
 }
 
 .UKWDFivePlugsTitle{
