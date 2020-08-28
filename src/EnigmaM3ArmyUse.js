@@ -1047,9 +1047,8 @@ class EnigmaM3ArmyUse extends Component {
           <hr className="LinesInternal" />
           <div className="MessageRequestResponse">
             <textarea rows="4" cols="50" name="message" value={this.state.request.message} onChange={this.changeMessageHandler}></textarea>
-            <br></br><button type="submit" onClick={this.submitHandler}>Submit</button><br></br>
-            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage"
-              value={this.state.responseMessage} readOnly></textarea>
+            <button type="submit" onClick={this.submitHandler}>Submit</button>
+            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage"value={this.state.responseMessage} readOnly></textarea>
           </div>
         </form>
       </div>
