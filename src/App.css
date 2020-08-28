@@ -1,6 +1,6 @@
 .Home{
   width: 80%;
-  min-height: 100%;
+  min-height: 100vh;
   position: absolute;
   left: 10%;
   background-color: rgb(0, 0, 85);
@@ -78,7 +78,7 @@
   margin-left: 3%;
   margin-right: 3%;
   font-weight: bolder;
-  font-size: 2vw;
+  font-size: 1.7vw;
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
@@ -86,7 +86,7 @@
 
 .EnigmaModelTypeOne{
   width: 80%;
-  min-height: 105%;
+  min-height: 100vh;
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 10%;
@@ -94,7 +94,7 @@
 
 .EnigmaModelTypeTwo{
   width: 80%;
-  min-height: 105%;
+  min-height: 100vh;
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 10%;
@@ -102,7 +102,7 @@
 
 .EnigmaModelTypeThree{
   width: 80%;
-  min-height: 105%;
+  min-height: 100vh;
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 10%;
@@ -110,7 +110,7 @@
 
 .EnigmaModelTypeFour{
   width: 80%;
-  min-height: 105%;
+  min-height: 100vh;
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 10%;
