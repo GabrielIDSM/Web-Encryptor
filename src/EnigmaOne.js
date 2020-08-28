@@ -312,7 +312,7 @@ class EnigmaOne extends Component {
     return (
       <div className="EnigmaModelTypeTwo">
         <Navbar/>
-        <h2 className="MachinesTitles">Enigma 1</h2>
+        <h2 className="MachinesTitles">Enigma I</h2>
         <hr className="Lines" />
         <h3 className="Description">Enigma I (Roman '1') is an electromechanical cipher machine developed in 1927/29
          by Chriffrier­maschinen AG (later: Heimsoeth und Rinke) In Berlin (Germany)
