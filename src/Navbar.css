@@ -1,7 +1,7 @@
 .Navbar{
     color: rgb(255, 255, 255);
     background-color: rgb(0, 90, 255);
-    height: 48px;
+    height: 3em;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -28,12 +28,12 @@
   
   .Title{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 1.5em;
   }
 
   .links li ul{
     padding: 3px;
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: bolder;
     position: absolute;
     min-width: max-content;

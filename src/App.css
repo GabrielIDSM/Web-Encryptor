@@ -14,13 +14,13 @@
 }
 
 .MainDivHome h1{
-  font-size: 74px;
+  font-size: 4.625em;
   padding: 4% 5% 4% 5%;
   text-transform: capitalize;
 }
 
 .MainDivHome h2{
-  font-size: 24px;
+  font-size: 1.5em;
   padding: 1% 5% 1% 5%;
   text-align: justify;
 }
@@ -28,7 +28,7 @@
 .MainDivHome ul{
   padding: 1% 5% 2% 5%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   font-weight: bolder;
   display: flex;
   justify-content: space-between;
@@ -57,14 +57,14 @@
 
 .TextLines{
   margin: 1% 3% 1% 3%;
-  font-size: 23px;
+  font-size: 1.4375em;
   text-align: center;
   font-weight: normal;
 }
 
 .SubTextLines{
   margin: 1% 3% 1% 3%;
-  font-size: 21px;
+  font-size: 1.3125em;
   text-align: center;
   font-weight: normal;
 }
@@ -82,14 +82,14 @@
 }
 
 .Description{
-  font-size: 18px;
+  font-size: 1.125em;
   text-align: justify;
   margin: 1% 5% 1% 5%;
   font-weight: normal;
 }
 
 .SubDescription{
-  font-size: 16px;
+  font-size: 1em;
   text-align: justify;
   margin: 1% 5% 1% 5%;
   font-weight: normal;
@@ -99,7 +99,7 @@
   margin-left: 3%;
   margin-right: 3%;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 1.5em;
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
@@ -156,7 +156,7 @@
 
 .ThreeRotorsSelector select{
   width: 16%;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -173,7 +173,7 @@
 .LabelRotors{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -187,7 +187,7 @@
 
 .ThreeRotorsWheelSet select{
   width: 16%;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -203,7 +203,7 @@
 
 .FourRotorsSelector select{
   width: 16%;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -219,7 +219,7 @@
 
 .FourRotorsWheelSet select{
   width: 16%;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -236,7 +236,7 @@
 
 .ReflectorDiv select{
   width: 16%;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -252,7 +252,7 @@
   resize: none;
   width: 100%;
   background-color: rgb(245, 245, 255);
-  font-size: 15px;
+  font-size: 0.9375em;
   border: 1px solid;
 }
 
@@ -268,14 +268,14 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bolder;
 }
 
 .FivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -301,7 +301,7 @@
 
 .FivePlugsDiv select{
   width: 50%;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -310,7 +310,7 @@
 .UKWDFivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
