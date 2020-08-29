@@ -13,13 +13,13 @@
 }
 
 .MainDivHome h1{
-  font-size: 6vw;
+  font-size: calc(3rem + 1vw);
   padding: 2% 5% 2% 5%;
   text-transform: capitalize;
 }
 
 .MainDivHome h2{
-  font-size: 1.8vw;
+  font-size: calc(0.8rem + 1vw);
   padding: 1% 5% 1% 5%;
   text-align: justify;
 }
@@ -27,7 +27,7 @@
 .MainDivHome ul{
   padding: 1% 5% 2% 5%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3vw;
+  font-size: calc(0.5rem + 0.8vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-between;
@@ -56,12 +56,12 @@
 
 .InstructionsDivHome h2{
   padding: 2% 5% 0% 5%;
-  font-size: 2.5vw;
+  font-size: calc(1rem + 1vw);
 }
 
 .InstructionsDivHome ul{
   padding: 0% 5% 2% 5%;
-  font-size: 1.8vw;
+  font-size: calc(0.6rem + 1vw);
   text-align: justify;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .Description{
-  font-size: 1.6vw;
+  font-size: calc(0.6rem + 1vw);
   text-align: justify;
   margin: 1% 5% 1% 5%;
   font-weight: normal;
@@ -102,7 +102,7 @@
   margin-left: 3%;
   margin-right: 3%;
   font-weight: bolder;
-  font-size: 1.7vw;
+  font-size: calc(0.8rem + 1vw);
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
@@ -155,7 +155,7 @@
 
 .ThreeRotorsSelector select{
   width: 16%;
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 1vw);
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -173,7 +173,7 @@
 .LabelRotors{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: 1.3vw;
+  font-size: calc(0.4rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -188,7 +188,7 @@
 
 .ThreeRotorsWheelSet select{
   width: 16%;
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 1vw);
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -205,7 +205,7 @@
 
 .FourRotorsSelector select{
   width: 16%;
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 1vw);
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -222,7 +222,7 @@
 
 .FourRotorsWheelSet select{
   width: 16%;
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 1vw);
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -232,7 +232,7 @@
 .ReflectorDiv{
   margin: 1% 5% 1% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: 1.3vw;
+  font-size: calc(0.6rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -241,7 +241,7 @@
 
 .ReflectorDiv select{
   width: 16%;
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 1vw);
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -258,7 +258,7 @@
   resize: none;
   width: 100%;
   background-color: rgb(245, 245, 255);
-  font-size: 1.2vw;
+  font-size: calc(0.45rem + 1vw);
   border: 1px solid;
 }
 
@@ -271,7 +271,7 @@
   text-decoration: none;
   display: inline-block;
   padding: 0.5vw 0vw 0.5vw 0vw;
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 1vw);
   font-weight: bolder;
   margin: 0.5% 0% 0.5% 0%;
 }
@@ -279,7 +279,7 @@
 .FivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: 1.3vw;
+  font-size: calc(0.4rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -306,7 +306,7 @@
 
 .FivePlugsDiv select{
   width: 50%;
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 1vw);
   padding: 0.5% 0% 0.5% 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
@@ -316,7 +316,7 @@
 .UKWDFivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: 1.2vw;
+  font-size: calc(0.4rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
