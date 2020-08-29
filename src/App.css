@@ -250,7 +250,7 @@
 }
 
 .MessageRequestResponse{
-  margin: 2% 5% 2% 5%;
+  margin: 2% 3% 2% 3%;
   padding: 0% 2% 0% 2%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -275,6 +275,14 @@
   font-size: calc(0.5rem + 1vw);
   font-weight: bolder;
   margin: 0.5% 0% 0.5% 0%;
+}
+
+.MessageRequestResponse button:hover{
+  background-color: rgb(30, 120, 255);
+}
+
+.MessageRequestResponse button:active{
+  background-color: rgb(0, 0, 155);
 }
 
 .FivePlugsTitle{
