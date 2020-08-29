@@ -12,13 +12,13 @@
     width: fit-content;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.92rem + 0.4vw);
     display: flex;
     justify-content: space-around;
   }
 
   .links li:hover{
-    background: rgb(100, 190, 255);
+    background: rgb(50, 140, 255);
   }
 
   .links li{
@@ -32,21 +32,22 @@
   }
 
   .links li ul{
+    margin-top: calc(0rem + 0.5vw);
     padding: 0.01rem;
-    font-size: calc(0.25rem + 1vw);
+    font-size: calc(0.45rem + 1vw);
     font-weight: bolder;
     position: absolute;
-    min-width: max-content;
+    width: 100%;
+    left: 0%;
     min-height: max-content;
     display: none;
-    background: rgb(100, 190, 255);
-    right: 12.55vw;
+    background: rgb(50, 140, 255);
   }
 
   .links li ul li{
     color: rgb(255, 255, 255);
     display: block;
-    padding: calc(0.35rem + 0.1vw);
+    padding: calc(0.25rem + 0.1vw);
   }
 
   .links li:hover ul{
@@ -54,5 +55,5 @@
   }
 
   .links li:hover ul li:hover{
-    background: rgb(110, 200, 255);
+    background: rgb(90, 180, 255);
   }

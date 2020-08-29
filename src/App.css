@@ -45,6 +45,7 @@
 .MainDivHome a{
   color: white;
   display: block;
+  height: 100%;
 }
 
 .InstructionsDivHome{
