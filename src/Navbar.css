@@ -33,7 +33,7 @@
 
   .links li ul{
     margin-top: calc(0rem + 0.5vw);
-    padding: 0.01rem;
+    padding: 1rem 0rem 1rem 0rem;
     font-size: calc(0.45rem + 1vw);
     font-weight: bolder;
     position: absolute;
@@ -47,7 +47,7 @@
   .links li ul li{
     color: rgb(255, 255, 255);
     display: block;
-    padding: calc(0.25rem + 0.1vw);
+    padding: calc(0.4rem + 0.1vw) calc(0.25rem + 0.1vw) calc(0.4rem + 0.1vw) calc(0.25rem + 0.1vw);
   }
 
   .links li:hover ul{
