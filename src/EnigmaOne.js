@@ -333,22 +333,16 @@ class EnigmaOne extends Component {
               <option value="1">I</option>
               <option value="2">II</option>
               <option value="3">III</option>
-              <option value="4">IV</option>
-              <option value="5">V</option>
             </select>
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">I</option>
               <option value="2">II</option>
               <option value="3">III</option>
-              <option value="4">IV</option>
-              <option value="5">V</option>
             </select>
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">I</option>
               <option value="2">II</option>
               <option value="3">III</option>
-              <option value="4">IV</option>
-              <option value="5">V</option>
             </select>
           </div>
           <div className="ThreeRotorsWheelSet">
