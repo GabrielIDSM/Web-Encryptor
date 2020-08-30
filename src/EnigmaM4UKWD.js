@@ -1297,11 +1297,11 @@ class EnigmaM4UKWD extends Component {
           <hr className="LinesInternal" />
           <div className="UKWD">
             <div className="UKWDFivePlugsTitle">
-              <label>UKW-D Wire One</label>
-              <label>UKW-D Wire Two</label>
-              <label>UKW-D Wire Three</label>
-              <label>UKW-D Wire Four</label>
-              <label>UKW-D Wire Five</label>
+              <label>UKW-D Wire 1</label>
+              <label>UKW-D Wire 2</label>
+              <label>UKW-D Wire 3</label>
+              <label>UKW-D Wire 4</label>
+              <label>UKW-D Wire 5</label>
             </div>
             <div className="FivePlugsDiv">
               <div>
@@ -1582,11 +1582,11 @@ class EnigmaM4UKWD extends Component {
 
             </div>
             <div className="UKWDFivePlugsTitle">
-              <label>UKW-D Wire Six</label>
-              <label>UKW-D Wire Seven</label>
-              <label>UKW-D Wire Eight</label>
-              <label>UKW-D Wire Nine</label>
-              <label>UKW-D Wire Ten</label>
+              <label>UKW-D Wire 6</label>
+              <label>UKW-D Wire 7</label>
+              <label>UKW-D Wire 8</label>
+              <label>UKW-D Wire 9</label>
+              <label>UKW-D Wire 10</label>
             </div>
             <div className="FivePlugsDiv">
               <div>
@@ -1866,8 +1866,8 @@ class EnigmaM4UKWD extends Component {
               </div>
             </div>
             <div className="UKWDFivePlugsTitle">
-              <label>UKW-D Wire Eleven</label>
-              <label>UKW-D Wire Twelve</label>
+              <label>UKW-D Wire 11</label>
+              <label>UKW-D Wire 12</label>
             </div>
             <div className="FivePlugsDiv">
               <div>
