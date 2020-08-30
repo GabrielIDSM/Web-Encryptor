@@ -93,7 +93,7 @@
 }
 
 .Description{
-  font-size: calc(0.4rem + 1vw);
+  font-size: calc(1rem + 0.4vw);
   text-align: justify;
   margin: 1% 5% 1% 5%;
   font-weight: normal;
@@ -103,7 +103,7 @@
   margin-left: 3%;
   margin-right: 3%;
   font-weight: bolder;
-  font-size: calc(0.8rem + 1vw);
+  font-size: calc(1.4rem + 0.4vw);
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
@@ -174,7 +174,7 @@
 .LabelRotors{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.3rem + 1vw);
+  font-size: calc(0.8rem + 0.4vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -233,7 +233,7 @@
 .ReflectorDiv{
   margin: 1% 5% 1% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.35rem + 1vw);
+  font-size: calc(0.9rem + 0.4vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -259,7 +259,7 @@
   resize: none;
   width: 100%;
   background-color: rgb(245, 245, 255);
-  font-size: calc(0.45rem + 1vw);
+  font-size: calc(0.8rem + 0.4vw);
   border: 1px solid;
 }
 
@@ -288,7 +288,7 @@
 .FivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.3rem + 1vw);
+  font-size: calc(0.8rem + 0.4vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -325,7 +325,7 @@
 .UKWDFivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.3rem + 1vw);
+  font-size: calc(0.8rem + 0.4vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
