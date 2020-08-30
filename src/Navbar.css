@@ -1,7 +1,7 @@
 .Navbar{
     color: rgb(255, 255, 255);
     background-color: rgb(0, 90, 255);
-    height: calc(2rem + 1vw);
+    height: calc(2.9rem + 0.5vw);
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -28,13 +28,13 @@
   
   .Title{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.1rem + 1vw);
   }
 
   .links li ul{
     margin-top: calc(0rem + 0.5vw);
-    padding: 1rem 0rem 1rem 0rem;
-    font-size: calc(0.45rem + 1vw);
+    padding: 1rem 0rem 0.4rem 0rem;
+    font-size: calc(1.7rem - 0.8vw);
     font-weight: bolder;
     position: absolute;
     width: 100%;

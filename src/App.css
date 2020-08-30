@@ -93,7 +93,7 @@
 }
 
 .Description{
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.4rem + 1vw);
   text-align: justify;
   margin: 1% 5% 1% 5%;
   font-weight: normal;
@@ -174,7 +174,7 @@
 .LabelRotors{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.4rem + 1vw);
+  font-size: calc(0.3rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -233,7 +233,7 @@
 .ReflectorDiv{
   margin: 1% 5% 1% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.35rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -288,7 +288,7 @@
 .FivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.4rem + 1vw);
+  font-size: calc(0.3rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
@@ -325,7 +325,7 @@
 .UKWDFivePlugsTitle{
   margin: 1% 5% 0% 5%;
   padding: 0% 2% 0% 2%;
-  font-size: calc(0.4rem + 1vw);
+  font-size: calc(0.3rem + 1vw);
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
