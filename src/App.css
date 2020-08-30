@@ -270,6 +270,7 @@
   color: white;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
   padding: calc(0.4rem + 0.1vw) 0% calc(0.4rem + 0.1vw) 0%;
   font-size: calc(0.5rem + 1vw);
