@@ -27,13 +27,12 @@ class EnigmaZahlwerkG260 extends Component {
     console.log(this.state.request)
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmazahlwerkg260', this.state.request)
       .then(response => {
-        console.log(response.data.message)
         this.setState({
           responseMessage: response.data.message
         })
       })
       .catch(error => {
-        console.log(error)
+        alert("An error ocurred, check the settings")
       })
   }
 
@@ -112,11 +111,11 @@ class EnigmaZahlwerkG260 extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeOne">
-        <Navbar/>
+        <Navbar />
         <h2 className="MachinesTitles">Enigma Zählwerk G-260</h2>
         <hr className="Lines" />
         <h3 className="Description">
-        The Zählwerk Enigma was developed in 1928 as an improved version of the Enigma D. The machine features a cog-wheel driven wheel stepping mechanism and has a character counter (German: Zählwerk) to the left of the wheels. It was also known as Zählwerksmaschine. A later variant of this machine, the Enigma G (G31) became known as the Abwehr Enigma. 
+          The Zählwerk Enigma was developed in 1928 as an improved version of the Enigma D. The machine features a cog-wheel driven wheel stepping mechanism and has a character counter (German: Zählwerk) to the left of the wheels. It was also known as Zählwerksmaschine. A later variant of this machine, the Enigma G (G31) became known as the Abwehr Enigma.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">

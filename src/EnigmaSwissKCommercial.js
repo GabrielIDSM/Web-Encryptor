@@ -27,13 +27,12 @@ class EnigmaSwissKCommercial extends Component {
     console.log(this.state.request)
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmaswisskcommercial', this.state.request)
       .then(response => {
-        console.log(response.data.message)
         this.setState({
           responseMessage: response.data.message
         })
       })
       .catch(error => {
-        console.log(error)
+        alert("An error ocurred, check the settings")
       })
   }
 
@@ -112,11 +111,11 @@ class EnigmaSwissKCommercial extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeOne">
-        <Navbar/>
+        <Navbar />
         <h2 className="MachinesTitles">Enigma Swiss-K Commercial</h2>
         <hr className="Lines" />
         <h3 className="Description">
-        The most famous and well-known Enigma K variant is probably the version that was built for the Swiss Army. Although it is not an official name, this machine is often called the Swiss-K. The machines were ordered by the Swiss before WWII and the first batch was delivered in 1939. 
+          The most famous and well-known Enigma K variant is probably the version that was built for the Swiss Army. Although it is not an official name, this machine is often called the Swiss-K. The machines were ordered by the Swiss before WWII and the first batch was delivered in 1939.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">

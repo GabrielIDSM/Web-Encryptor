@@ -46,13 +46,12 @@ class EnigmaOne extends Component {
     console.log(this.state.request)
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmaone', this.state.request)
       .then(response => {
-        console.log(response.data.message)
         this.setState({
           responseMessage: response.data.message
         })
       })
       .catch(error => {
-        console.log(error)
+        alert("An error ocurred, check the settings")
       })
   }
 

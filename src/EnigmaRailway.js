@@ -27,13 +27,12 @@ class EnigmaRailway extends Component {
     console.log(this.state.request)
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmarailway', this.state.request)
       .then(response => {
-        console.log(response.data.message)
         this.setState({
           responseMessage: response.data.message
         })
       })
       .catch(error => {
-        console.log(error)
+        alert("An error ocurred, check the settings")
       })
   }
 
@@ -112,11 +111,11 @@ class EnigmaRailway extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeOne">
-        <Navbar/>
+        <Navbar />
         <h2 className="MachinesTitles">Enigma Railway</h2>
         <hr className="Lines" />
         <h3 className="Description">
-        During WWII, the Germans used a special Enigma machine for the German Railway (Reichsbahn). It was basically a standard Enigma K with rewired wheels and a rewired UKW. Furthermore, the position of the turnover notches of wheels I and III were swapped. Enigma traffic from the German Reichsbahn was first encountered by the codebreakers at Bletchley Park on 25 July 1940 and all messages were decrypted until the traffic ceased a month later, on 27 August 1940. 
+          During WWII, the Germans used a special Enigma machine for the German Railway (Reichsbahn). It was basically a standard Enigma K with rewired wheels and a rewired UKW. Furthermore, the position of the turnover notches of wheels I and III were swapped. Enigma traffic from the German Reichsbahn was first encountered by the codebreakers at Bletchley Park on 25 July 1940 and all messages were decrypted until the traffic ceased a month later, on 27 August 1940.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">

@@ -147,7 +147,7 @@
 }
 
 .ThreeRotorsSelector{
-  margin: 1% 5% 0% 5%;
+  margin: calc(0.5rem + 0.4vw) 5% 0% 5%;
   padding: 0% 2% 0% 2%;
   display: flex;
   justify-content: space-around;
@@ -156,15 +156,15 @@
 
 .ThreeRotorsSelector select{
   width: 16%;
-  font-size: calc(0.5rem + 1vw);
-  padding: calc(0.2rem + 0.1vw) 0% calc(0.2rem + 0.1vw) 0%;
+  font-size: calc(1rem + 0.4vw);
+  padding: calc(0.55rem + 0.1vw) 0% calc(0.55rem + 0.1vw) 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
   appearance: none;
 }
 
 .ThreeRotorsWheelSet{
-  margin: 0% 5% 1% 5%;
+  margin: 0% 5% calc(0.8rem + 0.4vw) 5%;
   padding: 0% 2% 0% 2%;
   display: flex;
   justify-content: space-around;
@@ -172,7 +172,7 @@
 }
 
 .LabelRotors{
-  margin: 1% 5% 0% 5%;
+  margin: calc(0.8rem + 0.4vw) 5% 0% 5%;
   padding: 0% 2% 0% 2%;
   font-size: calc(0.8rem + 0.4vw);
   font-weight: bolder;
@@ -189,8 +189,8 @@
 
 .ThreeRotorsWheelSet select{
   width: 16%;
-  font-size: calc(0.5rem + 1vw);
-  padding: calc(0.2rem + 0.1vw) 0% calc(0.2rem + 0.1vw) 0%;
+  font-size: calc(1rem + 0.4vw);
+  padding: calc(0.55rem + 0.1vw) 0% calc(0.55rem + 0.1vw) 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
   appearance: none;
@@ -206,15 +206,15 @@
 
 .FourRotorsSelector select{
   width: 16%;
-  font-size: calc(0.5rem + 1vw);
-  padding: calc(0.2rem + 0.1vw) 0% calc(0.2rem + 0.1vw) 0%;
+  font-size: calc(1rem + 0.4vw);
+  padding: calc(0.55rem + 0.1vw) 0% calc(0.55rem + 0.1vw) 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
   appearance: none;
 }
 
 .FourRotorsWheelSet{
-  margin: 0% 5% 1% 5%;
+  margin: 0% 5% calc(0.8rem + 0.4vw) 5%;
   padding: 0% 2% 0% 2%;
   display: flex;
   justify-content: space-around;
@@ -223,15 +223,15 @@
 
 .FourRotorsWheelSet select{
   width: 16%;
-  font-size: calc(0.5rem + 1vw);
-  padding: calc(0.2rem + 0.1vw) 0% calc(0.2rem + 0.1vw) 0%;
+  font-size: calc(1rem + 0.4vw);
+  padding: calc(0.55rem + 0.1vw) 0% calc(0.55rem + 0.1vw) 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
   appearance: none;
 }
 
 .ReflectorDiv{
-  margin: 1% 5% 1% 5%;
+  margin: calc(0.8rem + 0.4vw) 5% calc(0.8rem + 0.4vw) 5%;
   padding: 0% 2% 0% 2%;
   font-size: calc(0.9rem + 0.4vw);
   font-weight: bolder;
@@ -242,8 +242,8 @@
 
 .ReflectorDiv select{
   width: 16%;
-  font-size: calc(0.5rem + 1vw);
-  padding: calc(0.2rem + 0.1vw) 0% calc(0.2rem + 0.1vw) 0%;
+  font-size: calc(1rem + 0.4vw);
+  padding: calc(0.55rem + 0.1vw) 0% calc(0.55rem + 0.1vw) 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;
   appearance: none;
@@ -259,7 +259,7 @@
   resize: none;
   width: 100%;
   background-color: rgb(245, 245, 255);
-  font-size: calc(0.8rem + 0.4vw);
+  font-size: calc(0.9rem + 0.4vw);
   border: 1px solid;
 }
 
@@ -273,7 +273,7 @@
   text-transform: uppercase;
   display: inline-block;
   padding: calc(0.4rem + 0.1vw) 0% calc(0.4rem + 0.1vw) 0%;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.7rem + 1vw);
   font-weight: bolder;
   margin: 0.5% 0% 0.5% 0%;
 }
@@ -287,7 +287,7 @@
 }
 
 .FivePlugsTitle{
-  margin: 1% 5% 0% 5%;
+  margin: calc(0.8rem + 0.4vw) 5% 0% 5%;
   padding: 0% 2% 0% 2%;
   font-size: calc(0.8rem + 0.4vw);
   font-weight: bolder;
@@ -303,7 +303,7 @@
 }
 
 .FivePlugsDiv{
-  margin: 1% 5% 0% 5%;
+  margin: 1% 5% calc(0.8rem + 0.4vw) 5%;
   padding: 0% 2% 0% 2%;
   display: flex;
   justify-content: space-around;
@@ -316,7 +316,7 @@
 
 .FivePlugsDiv select{
   width: 50%;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(1rem + 0.4vw);
   padding: calc(0.55rem + 0.1vw) 0% calc(0.55rem + 0.1vw) 0%;
   background-color: rgb(245, 245, 255);
   border: 1px solid;

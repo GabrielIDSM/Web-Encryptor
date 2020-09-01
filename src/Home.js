@@ -20,9 +20,9 @@ class Home extends Component {
                     <h2>Rules</h2>
                     <hr/>
                     <ul>
-                        <li>It is not allowed to use the same rotor more than once;</li>
-                        <li>It is not allowed to use the same letter more than once on Plugboard;</li>
-                        <li>It is not allowed to use the same letter more than once on UKW-D;</li>
+                        <li>Do not use the same rotor more than once;</li>
+                        <li>Do not use the same letter more than once on Plugboard;</li>
+                        <li>Do not use the same letter more than once on UKW-D;</li>
                     </ul>
                 </div>
             </div>

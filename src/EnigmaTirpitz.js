@@ -27,13 +27,12 @@ class EnigmaTirpitz extends Component {
     console.log(this.state.request)
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmatirpitz', this.state.request)
       .then(response => {
-        console.log(response.data.message)
         this.setState({
           responseMessage: response.data.message
         })
       })
       .catch(error => {
-        console.log(error)
+        alert("An error ocurred, check the settings")
       })
   }
 
@@ -112,11 +111,11 @@ class EnigmaTirpitz extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeOne">
-        <Navbar/>
+        <Navbar />
         <h2 className="MachinesTitles">Enigma Tirpitz</h2>
         <hr className="Lines" />
         <h3 className="Description">
-        The Enigma T, codenamed Tirpitz, was an Enigma cipher machine developed during WWII by the Germans especially for use by the Japanese Army. It was based on the commercial Enigma K, but had differently wired wheels (and ETW) and multiple turnovers on each wheel. Furthermore, it had an Eintrittswalze (ETW) that was wired differently from all other Enigma machines.
+          The Enigma T, codenamed Tirpitz, was an Enigma cipher machine developed during WWII by the Germans especially for use by the Japanese Army. It was based on the commercial Enigma K, but had differently wired wheels (and ETW) and multiple turnovers on each wheel. Furthermore, it had an Eintrittswalze (ETW) that was wired differently from all other Enigma machines.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">

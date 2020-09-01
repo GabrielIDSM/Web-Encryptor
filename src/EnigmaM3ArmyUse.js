@@ -46,13 +46,12 @@ class EnigmaM3ArmyUse extends Component {
     console.log(this.state.request)
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamthreearmywithtenplugs', this.state.request)
       .then(response => {
-        console.log(response.data.message)
         this.setState({
           responseMessage: response.data.message
         })
       })
       .catch(error => {
-        console.log(error)
+        alert("An error ocurred, check the settings")
       })
   }
 
@@ -311,11 +310,11 @@ class EnigmaM3ArmyUse extends Component {
   render() {
     return (
       <div className="EnigmaModelTypeTwo">
-        <Navbar/>
+        <Navbar />
         <h2 className="MachinesTitles">Enigma M3 Army-use with full Plugboard</h2>
         <hr className="Lines" />
         <h3 className="Description">
-        M1, M2 and M3 were 3-wheel electromechanical cipher machines, generally known as M3, used during WWII by the German Navy (Kriegsmarine). The machine was compatible with the Enigma I used by the Army (Heer) and Air Force (Luftwaffe). After the Wehrmacht had introduced the Enigma I in 1932, the Kriegsmarine followed in 1934 with the introduction of the M1. Although the machine is compatible with the Enigma I, it has some manufacturing differences that are unique to the German Navy.
+          M1, M2 and M3 were 3-wheel electromechanical cipher machines, generally known as M3, used during WWII by the German Navy (Kriegsmarine). The machine was compatible with the Enigma I used by the Army (Heer) and Air Force (Luftwaffe). After the Wehrmacht had introduced the Enigma I in 1932, the Kriegsmarine followed in 1934 with the introduction of the M1. Although the machine is compatible with the Enigma I, it has some manufacturing differences that are unique to the German Navy.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
@@ -444,299 +443,299 @@ class EnigmaM3ArmyUse extends Component {
             </div>
             <div className="FivePlugsDiv">
               <div>
-              <select id="plugOneA" name="plugOneA" type="number" value={this.state.request.plugOneA} onChange={this.changePlugOneAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugOneA" name="plugOneA" type="number" value={this.state.request.plugOneA} onChange={this.changePlugOneAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugOneB" name="plugOneB" type="number" value={this.state.request.plugOneB} onChange={this.changePlugOneBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugOneB" name="plugOneB" type="number" value={this.state.request.plugOneB} onChange={this.changePlugOneBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugTwoA" name="plugTwoA" type="number" value={this.state.request.plugTwoA} onChange={this.changePlugTwoAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugTwoA" name="plugTwoA" type="number" value={this.state.request.plugTwoA} onChange={this.changePlugTwoAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugTwoB" name="plugTwoB" type="number" value={this.state.request.plugTwoB} onChange={this.changePlugTwoBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugTwoB" name="plugTwoB" type="number" value={this.state.request.plugTwoB} onChange={this.changePlugTwoBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugThreeA" name="plugThreeA" type="number" value={this.state.request.plugThreeA} onChange={this.changePlugThreeAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugThreeA" name="plugThreeA" type="number" value={this.state.request.plugThreeA} onChange={this.changePlugThreeAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugThreeB" name="plugThreeB" type="number" value={this.state.request.plugThreeB} onChange={this.changePlugThreeBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugThreeB" name="plugThreeB" type="number" value={this.state.request.plugThreeB} onChange={this.changePlugThreeBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugFourA" name="plugFourA" type="number" value={this.state.request.plugFourA} onChange={this.changePlugFourAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugFourA" name="plugFourA" type="number" value={this.state.request.plugFourA} onChange={this.changePlugFourAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugFourB" name="plugFourB" type="number" value={this.state.request.plugFourB} onChange={this.changePlugFourBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugFourB" name="plugFourB" type="number" value={this.state.request.plugFourB} onChange={this.changePlugFourBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugFiveA" name="plugFiveA" type="number" value={this.state.request.plugFiveA} onChange={this.changePlugFiveAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugFiveA" name="plugFiveA" type="number" value={this.state.request.plugFiveA} onChange={this.changePlugFiveAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugFiveB" name="plugFiveB" type="number" value={this.state.request.plugFiveB} onChange={this.changePlugFiveBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugFiveB" name="plugFiveB" type="number" value={this.state.request.plugFiveB} onChange={this.changePlugFiveBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
             </div>
             <div className="FivePlugsTitle">
@@ -748,299 +747,299 @@ class EnigmaM3ArmyUse extends Component {
             </div>
             <div className="FivePlugsDiv">
               <div>
-              <select id="plugSixA" name="plugSixA" type="number" value={this.state.request.plugSixA} onChange={this.changePlugSixAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugSixA" name="plugSixA" type="number" value={this.state.request.plugSixA} onChange={this.changePlugSixAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugSixB" name="plugSixB" type="number" value={this.state.request.plugSixB} onChange={this.changePlugSixBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugSixB" name="plugSixB" type="number" value={this.state.request.plugSixB} onChange={this.changePlugSixBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugSevenA" name="plugSevenA" type="number" value={this.state.request.plugSevenA} onChange={this.changePlugSevenAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugSevenA" name="plugSevenA" type="number" value={this.state.request.plugSevenA} onChange={this.changePlugSevenAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugSevenB" name="plugSevenB" type="number" value={this.state.request.plugSevenB} onChange={this.changePlugSevenBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugSevenB" name="plugSevenB" type="number" value={this.state.request.plugSevenB} onChange={this.changePlugSevenBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugEightA" name="plugEightA" type="number" value={this.state.request.plugEightA} onChange={this.changePlugEightAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugEightA" name="plugEightA" type="number" value={this.state.request.plugEightA} onChange={this.changePlugEightAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugEightB" name="plugEightB" type="number" value={this.state.request.plugEightB} onChange={this.changePlugEightBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugEightB" name="plugEightB" type="number" value={this.state.request.plugEightB} onChange={this.changePlugEightBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugNineA" name="plugNineA" type="number" value={this.state.request.plugNineA} onChange={this.changePlugNineAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugNineA" name="plugNineA" type="number" value={this.state.request.plugNineA} onChange={this.changePlugNineAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugNineB" name="plugNineB" type="number" value={this.state.request.plugNineB} onChange={this.changePlugNineBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugNineB" name="plugNineB" type="number" value={this.state.request.plugNineB} onChange={this.changePlugNineBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
               <div>
-              <select id="plugTenA" name="plugTenA" type="number" value={this.state.request.plugTenA} onChange={this.changePlugTenAHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugTenA" name="plugTenA" type="number" value={this.state.request.plugTenA} onChange={this.changePlugTenAHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
 
-              <select id="plugTenB" name="plugTenB" type="number" value={this.state.request.plugTenB} onChange={this.changePlugTenBHandler}>
-                <option value="0">A</option>
-                <option value="1">B</option>
-                <option value="2">C</option>
-                <option value="3">D</option>
-                <option value="4">E</option>
-                <option value="5">F</option>
-                <option value="6">G</option>
-                <option value="7">H</option>
-                <option value="8">I</option>
-                <option value="9">J</option>
-                <option value="10">K</option>
-                <option value="11">L</option>
-                <option value="12">M</option>
-                <option value="13">N</option>
-                <option value="14">O</option>
-                <option value="15">P</option>
-                <option value="16">Q</option>
-                <option value="17">R</option>
-                <option value="18">S</option>
-                <option value="19">T</option>
-                <option value="20">U</option>
-                <option value="21">V</option>
-                <option value="22">W</option>
-                <option value="23">X</option>
-                <option value="24">Y</option>
-                <option value="25">Z</option>
-              </select>
+                <select id="plugTenB" name="plugTenB" type="number" value={this.state.request.plugTenB} onChange={this.changePlugTenBHandler}>
+                  <option value="0">A</option>
+                  <option value="1">B</option>
+                  <option value="2">C</option>
+                  <option value="3">D</option>
+                  <option value="4">E</option>
+                  <option value="5">F</option>
+                  <option value="6">G</option>
+                  <option value="7">H</option>
+                  <option value="8">I</option>
+                  <option value="9">J</option>
+                  <option value="10">K</option>
+                  <option value="11">L</option>
+                  <option value="12">M</option>
+                  <option value="13">N</option>
+                  <option value="14">O</option>
+                  <option value="15">P</option>
+                  <option value="16">Q</option>
+                  <option value="17">R</option>
+                  <option value="18">S</option>
+                  <option value="19">T</option>
+                  <option value="20">U</option>
+                  <option value="21">V</option>
+                  <option value="22">W</option>
+                  <option value="23">X</option>
+                  <option value="24">Y</option>
+                  <option value="25">Z</option>
+                </select>
               </div>
             </div>
           </div>
@@ -1048,7 +1047,7 @@ class EnigmaM3ArmyUse extends Component {
           <div className="MessageRequestResponse">
             <textarea rows="4" cols="50" name="message" value={this.state.request.message} onChange={this.changeMessageHandler}></textarea>
             <button type="submit" onClick={this.submitHandler}>Submit</button>
-            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage"value={this.state.responseMessage} readOnly></textarea>
+            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage" value={this.state.responseMessage} readOnly></textarea>
           </div>
         </form>
       </div>
