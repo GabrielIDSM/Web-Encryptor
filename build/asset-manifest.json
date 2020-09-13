@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Web-Encryptor/static/css/main.c380d2cb.chunk.css",
+    "main.js": "/Web-Encryptor/static/js/main.45120666.chunk.js",
+    "main.js.map": "/Web-Encryptor/static/js/main.45120666.chunk.js.map",
+    "runtime-main.js": "/Web-Encryptor/static/js/runtime-main.d71c72f2.js",
+    "runtime-main.js.map": "/Web-Encryptor/static/js/runtime-main.d71c72f2.js.map",
+    "static/js/2.76a1e36c.chunk.js": "/Web-Encryptor/static/js/2.76a1e36c.chunk.js",
+    "static/js/2.76a1e36c.chunk.js.map": "/Web-Encryptor/static/js/2.76a1e36c.chunk.js.map",
+    "index.html": "/Web-Encryptor/index.html",
+    "precache-manifest.a9d9738fa6a0a32619d3c41615b9e1e3.js": "/Web-Encryptor/precache-manifest.a9d9738fa6a0a32619d3c41615b9e1e3.js",
+    "service-worker.js": "/Web-Encryptor/service-worker.js",
+    "static/css/main.c380d2cb.chunk.css.map": "/Web-Encryptor/static/css/main.c380d2cb.chunk.css.map",
+    "static/js/2.76a1e36c.chunk.js.LICENSE.txt": "/Web-Encryptor/static/js/2.76a1e36c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d71c72f2.js",
+    "static/js/2.76a1e36c.chunk.js",
+    "static/css/main.c380d2cb.chunk.css",
+    "static/js/main.45120666.chunk.js"
+  ]
+}
