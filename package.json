@@ -1,5 +1,6 @@
 {
-  "name": "encryptor",
+  "name": "web-encryptor",
+  "homepage": "https://gabrielidsm.github.io/Web-Encryptor/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +14,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3"
   },
-  "homepage": "https://gabrielidsm.github.io/Web-Encryptor/",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
