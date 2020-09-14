@@ -16,11 +16,11 @@ import { EnigmaM3NavyUseEightRotors } from './EnigmaM3NavyUseEightRotors'
 import { EnigmaM4ThreeRotors } from './EnigmaM4ThreeRotors'
 import { EnigmaM4FourRotors } from './EnigmaM4FourRotors'
 import { EnigmaM4UKWD } from './EnigmaM4UKWD'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <div className="App">
         <Switch>
           <Route path="/" exact component={ Home }/>
