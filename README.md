@@ -1,8 +1,8 @@
 # Web Encryptor (React Application)
 
-## Deploy (Heroku)
+## Deploy (GH Pages)
 
-https://webencryptor.herokuapp.com/
+https://gabrielidsm.github.io/Web-Encryptor
 
 ## Team
 
