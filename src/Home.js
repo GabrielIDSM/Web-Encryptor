@@ -9,11 +9,11 @@ class Home extends Component {
                 <Navbar />
                 <div className="MainDivHome">
                     <h1>Learn about the enigma machine and cryptography with web encryptor!</h1>
-                    <h2>The Web Encryptor is a personal project developed by Gabriel Inácio. The project has 7 machines available and 15 ways to use them. </h2>
+                    <h2>The Web Encryptor is a personal project developed by Gabriel Inácio. The project has 7 machines available and 15 ways to use them. Wait a few seconds after clicking the submit button. All information about the machines was provided by Crypto Museum Website.</h2>
                     <ul>
                         <li><a href="https://github.com/GabrielIDSM">Github Personal Profile</a></li>
                         <li><a href="https://github.com/GabrielIDSM/Web-Encryptor">Project Page</a></li>
-                        <li><a href="https://github.com/GabrielIDSM/Web-Encryptor-API">API Project Page</a></li>
+                        <li><a href="https://www.cryptomuseum.com/index.htm">Crypto Museum Website</a></li>
                     </ul>
                 </div>
                 <div className="InstructionsDivHome">

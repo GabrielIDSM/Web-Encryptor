@@ -32,7 +32,7 @@ body{
 }
 
 .MainDivHome h2{
-  font-size: calc(0.8rem + 1vw);
+  font-size: calc(0.7rem + 1vw);
   padding: 1% 5% 1% 5%;
   text-align: justify;
 }
