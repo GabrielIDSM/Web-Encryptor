@@ -1,3 +1,3 @@
-Sitemap: https://gabrielidsm.github.io/Web-Encryptor/sitemap.xml
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
