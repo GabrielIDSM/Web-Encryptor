@@ -1,0 +1,33 @@
+.Home{
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  background-color: rgb(0, 90, 255);
+}
+
+.MainImg{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.Title-Div{
+  width: 100%;
+  position: absolute;
+  background-color: rgb(0, 90, 255);
+  color: white;
+}
+
+.Title-Div h1 {
+  font-size: calc(1rem + 2vw);
+  padding: 2% 5% 2% 5%;
+  text-transform: capitalize;
+}
+
+.Title-Div h2 {
+  font-size: calc(0.4rem + 1.5vw);
+  padding: 1% 5% 5% 5%;
+  text-align: justify;
+}

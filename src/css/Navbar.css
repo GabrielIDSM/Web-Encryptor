@@ -17,6 +17,10 @@
     justify-content: space-around;
   }
 
+  .links{
+    color: white;
+  }
+  
   .links li:hover{
     background: rgb(50, 140, 255);
   }

@@ -4,6 +4,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './css/App.css';
 import './css/Navbar.css';
+import './css/Machines.css';
+import './css/Home.css';
 
 ReactDOM.render(
   <React.StrictMode>
