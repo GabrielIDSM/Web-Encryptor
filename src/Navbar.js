@@ -11,7 +11,7 @@ class Navbar extends Component {
           <li>HOME</li>
         </Link>
         <div className="links">
-          <li><label>MACHINES</label>
+          <li><label>TRY</label>
             <ul>
               <Link to="/enigmaone">
                 <li className="MachinesListUnique">One</li>
