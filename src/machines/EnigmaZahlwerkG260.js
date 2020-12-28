@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
-class EnigmaSwissKCommercial extends Component {
+class EnigmaZahlwerkG260 extends Component {
   constructor(props) {
     super(props)
 
@@ -25,7 +24,10 @@ class EnigmaSwissKCommercial extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmaswisskcommercial', this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmazahlwerkg260', this.state.request)
       .then(response => {
         this.setState({
           responseMessage: response.data.message
@@ -112,10 +114,10 @@ class EnigmaSwissKCommercial extends Component {
     return (
       <div className="EnigmaModelTypeOne">
         <Navbar />
-        <h2 className="MachinesTitles">Enigma Swiss-K Commercial</h2>
+        <h2 className="MachinesTitles">Enigma Zählwerk G-260</h2>
         <hr className="Lines" />
         <h3 className="Description">
-          The most famous and well-known Enigma K variant is probably the version that was built for the Swiss Army. Although it is not an official name, this machine is often called the Swiss-K. The machines were ordered by the Swiss before WWII and the first batch was delivered in 1939.
+          The Zählwerk Enigma was developed in 1928 as an improved version of the Enigma D. The machine features a cog-wheel driven wheel stepping mechanism and has a character counter (German: Zählwerk) to the left of the wheels. It was also known as Zählwerksmaschine. A later variant of this machine, the Enigma G (G31) became known as the Abwehr Enigma.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
@@ -130,13 +132,11 @@ class EnigmaSwissKCommercial extends Component {
               <option value="2">II</option>
               <option value="3">III</option>
             </select>
-
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">I</option>
               <option value="2">II</option>
               <option value="3">III</option>
             </select>
-
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">I</option>
               <option value="2">II</option>
@@ -172,7 +172,6 @@ class EnigmaSwissKCommercial extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-
             <select id="rotor_2_set" name="rotorTwoWheelSet" type="number" value={this.state.request.rotorTwoWheelSet} onChange={this.changeR2WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -201,7 +200,6 @@ class EnigmaSwissKCommercial extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-
             <select id="rotor_3_set" name="rotorThreeWheelSet" type="number" value={this.state.request.rotorThreeWheelSet} onChange={this.changeR3WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -276,4 +274,4 @@ class EnigmaSwissKCommercial extends Component {
   }
 }
 
-export { EnigmaSwissKCommercial };
+export { EnigmaZahlwerkG260 };

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
-class EnigmaM4FourRotors extends Component {
+class EnigmaM4ThreeRotors extends Component {
   constructor(props) {
     super(props)
 
@@ -14,11 +13,9 @@ class EnigmaM4FourRotors extends Component {
         rotorOne: 1,
         rotorTwo: 2,
         rotorThree: 3,
-        rotorFour: 4,
-        rotorOneWheelSet: 1,
-        rotorTwoWheelSet: 5,
-        rotorThreeWheelSet: 10,
-        rotorFourWheelSet: 15,
+        rotorOneWheelSet: 5,
+        rotorTwoWheelSet: 10,
+        rotorThreeWheelSet: 15,
         plugOneA: 0,
         plugOneB: 25,
         plugTwoA: 1,
@@ -47,6 +44,9 @@ class EnigmaM4FourRotors extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamfourwithplugboardandthreerotors', this.state.request)
       .then(response => {
         this.setState({
@@ -94,15 +94,6 @@ class EnigmaM4FourRotors extends Component {
     })
   }
 
-  changeR4Handler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.rotorFour = parseInt(value)
-      return { obj }
-    })
-  }
-
   changeR1WHandler = (e) => {
     var value = e.target.value
     this.setState(prevState => {
@@ -126,15 +117,6 @@ class EnigmaM4FourRotors extends Component {
     this.setState(prevState => {
       var obj = prevState.request
       obj.rotorThreeWheelSet = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changeR4WHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.rotorFourWheelSet = parseInt(value)
       return { obj }
     })
   }
@@ -341,7 +323,7 @@ class EnigmaM4FourRotors extends Component {
     return (
       <div className="EnigmaModelTypeThree">
         <Navbar />
-        <h2 className="MachinesTitles">Enigma M4 4 rotors operation</h2>
+        <h2 className="MachinesTitles">Enigma M4 3 rotors operation</h2>
         <hr className="Lines" />
         <h3 className="Description">
           Enigma M4 was an electromechanical cipher machine, developed during WWII, for use by certain divisions of the Kriegsmarine (German Navy) — in particular for the U-Boats. It was intended as a more secure version of the Enigma M3, which was based on the German Army Enigma I. The M4 played a pivoting role in the Battle of the Atlantic and was introduced unexpected on 2 February 1942, causing great upset with the allied codebreakers at Bletchley Park (BP), where its traffic was known as SHARK. It remained unbroken for nine months until new key sheets were captured.
@@ -352,9 +334,8 @@ class EnigmaM4FourRotors extends Component {
             <label>Rotor 1 Setting</label>
             <label>Rotor 2 Setting</label>
             <label>Rotor 3 Setting</label>
-            <label>Rotor 4 Setting</label>
           </div>
-          <div className="FourRotorsSelector">
+          <div className="ThreeRotorsSelector">
             <select id="rotor_1" name="rotorOne" type="number" value={this.state.request.rotorOne} onChange={this.changeR1Handler}>
               <option value="1">I</option>
               <option value="2">II</option>
@@ -385,12 +366,8 @@ class EnigmaM4FourRotors extends Component {
               <option value="7">VII</option>
               <option value="8">VIII</option>
             </select>
-            <select id="rotor_4" name="rotorFour" type="number" value={this.state.request.rotorFour} onChange={this.changeR4Handler}>
-              <option value="4">B</option>
-              <option value="5">G</option>
-            </select>
           </div>
-          <div className="FourRotorsWheelSet">
+          <div className="ThreeRotorsWheelSet">
             <select id="rotor_1_set" name="rotorOneWheelSet" type="number" value={this.state.request.rotorOneWheelSet} onChange={this.changeR1WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -475,41 +452,14 @@ class EnigmaM4FourRotors extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
-            <select id="rotor_4_set" name="rotorFourWheelSet" type="number" value={this.state.request.rotorFourWheelSet} onChange={this.changeR4WHandler}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-              <option value="26">26</option>
-            </select>
           </div>
           <hr className="LinesInternal" />
           <div className="ReflectorDiv">
             <label>Reflector</label>
             <select id="ref" name="reflector" type="number" value={this.state.request.reflector} onChange={this.changeRefHandler}>
-              <option value="4">1</option>
-              <option value="5">2</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
             </select>
           </div>
           <hr className="LinesInternal" />
@@ -1136,4 +1086,4 @@ class EnigmaM4FourRotors extends Component {
   }
 }
 
-export { EnigmaM4FourRotors };
+export { EnigmaM4ThreeRotors };

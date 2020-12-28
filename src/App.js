@@ -1,21 +1,20 @@
 import React from 'react';
-import './App.css';
 import { Home } from './Home';
-import { EnigmaSwissKCommercial } from './EnigmaSwissKCommercial'
-import { EnigmaSwissKAirForce } from './EnigmaSwissKAirForce'
-import { EnigmaRailway } from './EnigmaRailway'
-import { EnigmaTirpitz } from './EnigmaTirpitz'
-import { EnigmaZahlwerkDefault } from './EnigmaZahlwerkDefault'
-import { EnigmaZahlwerkG260 } from './EnigmaZahlwerkG260'
-import { EnigmaZahlwerkG312 } from './EnigmaZahlwerkG312'
-import { EnigmaOne } from './EnigmaOne'
-import { EnigmaM3SixPlugs } from './EnigmaM3SixPlugs'
-import { EnigmaM3ArmyUse } from './EnigmaM3ArmyUse'
-import { EnigmaM3NavyUseSevenRotors } from './EnigmaM3NavyUseSevenRotors'
-import { EnigmaM3NavyUseEightRotors } from './EnigmaM3NavyUseEightRotors'
-import { EnigmaM4ThreeRotors } from './EnigmaM4ThreeRotors'
-import { EnigmaM4FourRotors } from './EnigmaM4FourRotors'
-import { EnigmaM4UKWD } from './EnigmaM4UKWD'
+import { EnigmaSwissKCommercial } from './machines/EnigmaSwissKCommercial'
+import { EnigmaSwissKAirForce } from './machines/EnigmaSwissKAirForce'
+import { EnigmaRailway } from './machines/EnigmaRailway'
+import { EnigmaTirpitz } from './machines/EnigmaTirpitz'
+import { EnigmaZahlwerkDefault } from './machines/EnigmaZahlwerkDefault'
+import { EnigmaZahlwerkG260 } from './machines/EnigmaZahlwerkG260'
+import { EnigmaZahlwerkG312 } from './machines/EnigmaZahlwerkG312'
+import { EnigmaOne } from './machines/EnigmaOne'
+import { EnigmaM3SixPlugs } from './machines/EnigmaM3SixPlugs'
+import { EnigmaM3ArmyUse } from './machines/EnigmaM3ArmyUse'
+import { EnigmaM3NavyUseSevenRotors } from './machines/EnigmaM3NavyUseSevenRotors'
+import { EnigmaM3NavyUseEightRotors } from './machines/EnigmaM3NavyUseEightRotors'
+import { EnigmaM4ThreeRotors } from './machines/EnigmaM4ThreeRotors'
+import { EnigmaM4FourRotors } from './machines/EnigmaM4FourRotors'
+import { EnigmaM4UKWD } from './machines/EnigmaM4UKWD'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {

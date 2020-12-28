@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
-class EnigmaZahlwerkG260 extends Component {
+class EnigmaRailway extends Component {
   constructor(props) {
     super(props)
 
@@ -25,7 +24,10 @@ class EnigmaZahlwerkG260 extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmazahlwerkg260', this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmarailway', this.state.request)
       .then(response => {
         this.setState({
           responseMessage: response.data.message
@@ -112,10 +114,10 @@ class EnigmaZahlwerkG260 extends Component {
     return (
       <div className="EnigmaModelTypeOne">
         <Navbar />
-        <h2 className="MachinesTitles">Enigma Zählwerk G-260</h2>
+        <h2 className="MachinesTitles">Enigma Railway</h2>
         <hr className="Lines" />
         <h3 className="Description">
-          The Zählwerk Enigma was developed in 1928 as an improved version of the Enigma D. The machine features a cog-wheel driven wheel stepping mechanism and has a character counter (German: Zählwerk) to the left of the wheels. It was also known as Zählwerksmaschine. A later variant of this machine, the Enigma G (G31) became known as the Abwehr Enigma.
+          During WWII, the Germans used a special Enigma machine for the German Railway (Reichsbahn). It was basically a standard Enigma K with rewired wheels and a rewired UKW. Furthermore, the position of the turnover notches of wheels I and III were swapped. Enigma traffic from the German Reichsbahn was first encountered by the codebreakers at Bletchley Park on 25 July 1940 and all messages were decrypted until the traffic ceased a month later, on 27 August 1940.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
@@ -272,4 +274,4 @@ class EnigmaZahlwerkG260 extends Component {
   }
 }
 
-export { EnigmaZahlwerkG260 };
+export { EnigmaRailway };

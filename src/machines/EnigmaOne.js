@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
 class EnigmaOne extends Component {
@@ -44,6 +43,9 @@ class EnigmaOne extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
     axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmaone', this.state.request)
       .then(response => {
         this.setState({

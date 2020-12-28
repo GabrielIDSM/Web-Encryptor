@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
-class EnigmaRailway extends Component {
+class EnigmaSwissKCommercial extends Component {
   constructor(props) {
     super(props)
 
@@ -25,7 +24,10 @@ class EnigmaRailway extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmarailway', this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmaswisskcommercial', this.state.request)
       .then(response => {
         this.setState({
           responseMessage: response.data.message
@@ -112,10 +114,10 @@ class EnigmaRailway extends Component {
     return (
       <div className="EnigmaModelTypeOne">
         <Navbar />
-        <h2 className="MachinesTitles">Enigma Railway</h2>
+        <h2 className="MachinesTitles">Enigma Swiss-K Commercial</h2>
         <hr className="Lines" />
         <h3 className="Description">
-          During WWII, the Germans used a special Enigma machine for the German Railway (Reichsbahn). It was basically a standard Enigma K with rewired wheels and a rewired UKW. Furthermore, the position of the turnover notches of wheels I and III were swapped. Enigma traffic from the German Reichsbahn was first encountered by the codebreakers at Bletchley Park on 25 July 1940 and all messages were decrypted until the traffic ceased a month later, on 27 August 1940.
+          The most famous and well-known Enigma K variant is probably the version that was built for the Swiss Army. Although it is not an official name, this machine is often called the Swiss-K. The machines were ordered by the Swiss before WWII and the first batch was delivered in 1939.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
@@ -130,11 +132,13 @@ class EnigmaRailway extends Component {
               <option value="2">II</option>
               <option value="3">III</option>
             </select>
+
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">I</option>
               <option value="2">II</option>
               <option value="3">III</option>
             </select>
+
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">I</option>
               <option value="2">II</option>
@@ -170,6 +174,7 @@ class EnigmaRailway extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
+
             <select id="rotor_2_set" name="rotorTwoWheelSet" type="number" value={this.state.request.rotorTwoWheelSet} onChange={this.changeR2WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -198,6 +203,7 @@ class EnigmaRailway extends Component {
               <option value="25">25</option>
               <option value="26">26</option>
             </select>
+
             <select id="rotor_3_set" name="rotorThreeWheelSet" type="number" value={this.state.request.rotorThreeWheelSet} onChange={this.changeR3WHandler}>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -272,4 +278,4 @@ class EnigmaRailway extends Component {
   }
 }
 
-export { EnigmaRailway };
+export { EnigmaSwissKCommercial };

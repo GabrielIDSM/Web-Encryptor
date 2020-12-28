@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
-class EnigmaM3ArmyUse extends Component {
+class EnigmaM3SixPlugs extends Component {
   constructor(props) {
     super(props)
 
@@ -27,15 +26,7 @@ class EnigmaM3ArmyUse extends Component {
         plugFiveA: 4,
         plugFiveB: 21,
         plugSixA: 5,
-        plugSixB: 20,
-        plugSevenA: 6,
-        plugSevenB: 19,
-        plugEightA: 7,
-        plugEightB: 18,
-        plugNineA: 8,
-        plugNineB: 17,
-        plugTenA: 9,
-        plugTenB: 16
+        plugSixB: 20
       },
       responseMessage: ''
     }
@@ -44,7 +35,10 @@ class EnigmaM3ArmyUse extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamthreearmywithtenplugs', this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamthreearmywithsixplugs', this.state.request)
       .then(response => {
         this.setState({
           responseMessage: response.data.message
@@ -235,83 +229,11 @@ class EnigmaM3ArmyUse extends Component {
     })
   }
 
-  changePlugSevenAHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugSevenA = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changePlugSevenBHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugSevenB = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changePlugEightAHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugEightA = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changePlugEightBHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugEightB = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changePlugNineAHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugNineA = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changePlugNineBHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugNineB = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changePlugTenAHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugTenA = parseInt(value)
-      return { obj }
-    })
-  }
-
-  changePlugTenBHandler = (e) => {
-    var value = e.target.value
-    this.setState(prevState => {
-      var obj = prevState.request
-      obj.plugTenB = parseInt(value)
-      return { obj }
-    })
-  }
-
   render() {
     return (
       <div className="EnigmaModelTypeTwo">
         <Navbar />
-        <h2 className="MachinesTitles">Enigma M3 Army-use with full Plugboard</h2>
+        <h2 className="MachinesTitles">Enigma M3 Army-use with 6 Plugs</h2>
         <hr className="Lines" />
         <h3 className="Description">
           M1, M2 and M3 were 3-wheel electromechanical cipher machines, generally known as M3, used during WWII by the German Navy (Kriegsmarine). The machine was compatible with the Enigma I used by the Army (Heer) and Air Force (Luftwaffe). After the Wehrmacht had introduced the Enigma I in 1932, the Kriegsmarine followed in 1934 with the introduction of the M1. Although the machine is compatible with the Enigma I, it has some manufacturing differences that are unique to the German Navy.
@@ -740,10 +662,6 @@ class EnigmaM3ArmyUse extends Component {
             </div>
             <div className="FivePlugsTitle">
               <label>Plug Six</label>
-              <label>Plug Seven</label>
-              <label>Plug Eight</label>
-              <label>Plug Nine</label>
-              <label>Plug Ten</label>
             </div>
             <div className="FivePlugsDiv">
               <div>
@@ -805,249 +723,14 @@ class EnigmaM3ArmyUse extends Component {
                   <option value="25">Z</option>
                 </select>
               </div>
-              <div>
-                <select id="plugSevenA" name="plugSevenA" type="number" value={this.state.request.plugSevenA} onChange={this.changePlugSevenAHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-
-                <select id="plugSevenB" name="plugSevenB" type="number" value={this.state.request.plugSevenB} onChange={this.changePlugSevenBHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-              </div>
-              <div>
-                <select id="plugEightA" name="plugEightA" type="number" value={this.state.request.plugEightA} onChange={this.changePlugEightAHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-
-                <select id="plugEightB" name="plugEightB" type="number" value={this.state.request.plugEightB} onChange={this.changePlugEightBHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-              </div>
-              <div>
-                <select id="plugNineA" name="plugNineA" type="number" value={this.state.request.plugNineA} onChange={this.changePlugNineAHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-
-                <select id="plugNineB" name="plugNineB" type="number" value={this.state.request.plugNineB} onChange={this.changePlugNineBHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-              </div>
-              <div>
-                <select id="plugTenA" name="plugTenA" type="number" value={this.state.request.plugTenA} onChange={this.changePlugTenAHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-
-                <select id="plugTenB" name="plugTenB" type="number" value={this.state.request.plugTenB} onChange={this.changePlugTenBHandler}>
-                  <option value="0">A</option>
-                  <option value="1">B</option>
-                  <option value="2">C</option>
-                  <option value="3">D</option>
-                  <option value="4">E</option>
-                  <option value="5">F</option>
-                  <option value="6">G</option>
-                  <option value="7">H</option>
-                  <option value="8">I</option>
-                  <option value="9">J</option>
-                  <option value="10">K</option>
-                  <option value="11">L</option>
-                  <option value="12">M</option>
-                  <option value="13">N</option>
-                  <option value="14">O</option>
-                  <option value="15">P</option>
-                  <option value="16">Q</option>
-                  <option value="17">R</option>
-                  <option value="18">S</option>
-                  <option value="19">T</option>
-                  <option value="20">U</option>
-                  <option value="21">V</option>
-                  <option value="22">W</option>
-                  <option value="23">X</option>
-                  <option value="24">Y</option>
-                  <option value="25">Z</option>
-                </select>
-              </div>
             </div>
           </div>
           <hr className="LinesInternal" />
           <div className="MessageRequestResponse">
             <textarea rows="4" cols="50" name="message" value={this.state.request.message} onChange={this.changeMessageHandler}></textarea>
-            <button type="submit" onClick={this.submitHandler}>Submit</button>
-            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage" value={this.state.responseMessage} readOnly></textarea>
+            <br></br><button type="submit" onClick={this.submitHandler}>Submit</button><br></br>
+            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage"
+              value={this.state.responseMessage} readOnly></textarea>
           </div>
         </form>
       </div>
@@ -1055,4 +738,4 @@ class EnigmaM3ArmyUse extends Component {
   }
 }
 
-export { EnigmaM3ArmyUse };
+export { EnigmaM3SixPlugs };

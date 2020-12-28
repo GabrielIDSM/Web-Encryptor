@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
-class EnigmaM3NavyUseSevenRotors extends Component {
+class EnigmaM3NavyUseEightRotors extends Component {
   constructor(props) {
     super(props)
 
@@ -44,7 +43,10 @@ class EnigmaM3NavyUseSevenRotors extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamthreenavalsevenrotorsmodel', this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamthreenavaleightrotorsmodel', this.state.request)
       .then(response => {
         this.setState({
           responseMessage: response.data.message
@@ -311,7 +313,7 @@ class EnigmaM3NavyUseSevenRotors extends Component {
     return (
       <div className="EnigmaModelTypeTwo">
         <Navbar />
-        <h2 className="MachinesTitles">Enigma M3 Navy-use 7 rotors</h2>
+        <h2 className="MachinesTitles">Enigma M3 Navy-use 8 rotors</h2>
         <hr className="Lines" />
         <h3 className="Description">
           M1, M2 and M3 were 3-wheel electromechanical cipher machines, generally known as M3, used during WWII by the German Navy (Kriegsmarine). The machine was compatible with the Enigma I used by the Army (Heer) and Air Force (Luftwaffe). After the Wehrmacht had introduced the Enigma I in 1932, the Kriegsmarine followed in 1934 with the introduction of the M1. Although the machine is compatible with the Enigma I, it has some manufacturing differences that are unique to the German Navy.
@@ -333,6 +335,7 @@ class EnigmaM3NavyUseSevenRotors extends Component {
               <option value="5">V</option>
               <option value="6">VI</option>
               <option value="7">VII</option>
+              <option value="8">VIII</option>
             </select>
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">I</option>
@@ -342,6 +345,7 @@ class EnigmaM3NavyUseSevenRotors extends Component {
               <option value="5">V</option>
               <option value="6">VI</option>
               <option value="7">VII</option>
+              <option value="8">VIII</option>
             </select>
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">I</option>
@@ -351,6 +355,7 @@ class EnigmaM3NavyUseSevenRotors extends Component {
               <option value="5">V</option>
               <option value="6">VI</option>
               <option value="7">VII</option>
+              <option value="8">VIII</option>
             </select>
           </div>
           <div className="ThreeRotorsWheelSet">
@@ -1063,4 +1068,4 @@ class EnigmaM3NavyUseSevenRotors extends Component {
   }
 }
 
-export { EnigmaM3NavyUseSevenRotors };
+export { EnigmaM3NavyUseEightRotors };

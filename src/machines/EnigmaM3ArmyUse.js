@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar } from './Navbar';
-import './App.css';
+import { Navbar } from '../Navbar';
 import axios from 'axios';
 
-class EnigmaM3NavyUseEightRotors extends Component {
+class EnigmaM3ArmyUse extends Component {
   constructor(props) {
     super(props)
 
@@ -44,7 +43,10 @@ class EnigmaM3NavyUseEightRotors extends Component {
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state.request)
-    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamthreenavaleightrotorsmodel', this.state.request)
+    this.setState({
+      responseMessage: "Encrypting ... (20s in first time)"
+    })
+    axios.post('https://encryptorapi-gabrielidsm.herokuapp.com/message/enigmamthreearmywithtenplugs', this.state.request)
       .then(response => {
         this.setState({
           responseMessage: response.data.message
@@ -311,11 +313,10 @@ class EnigmaM3NavyUseEightRotors extends Component {
     return (
       <div className="EnigmaModelTypeTwo">
         <Navbar />
-        <h2 className="MachinesTitles">Enigma M3 Navy-use 8 rotors</h2>
+        <h2 className="MachinesTitles">Enigma M3 Army-use with full Plugboard</h2>
         <hr className="Lines" />
         <h3 className="Description">
           M1, M2 and M3 were 3-wheel electromechanical cipher machines, generally known as M3, used during WWII by the German Navy (Kriegsmarine). The machine was compatible with the Enigma I used by the Army (Heer) and Air Force (Luftwaffe). After the Wehrmacht had introduced the Enigma I in 1932, the Kriegsmarine followed in 1934 with the introduction of the M1. Although the machine is compatible with the Enigma I, it has some manufacturing differences that are unique to the German Navy.
-        <br />Whereas the Enigma machines of the German Wehrmacht (Heer and Luftwaffe) were supplied with 5 cipher wheels, all Naval machines had 8 wheels to choose from. The first five wheels (I-V) were identical to the five wheels supplied to the rest of the German Forces, allowing some level of compatibility, but the additional three wheels (VI-VIII) were used exclusively by the Kriegsmarine.
         </h3>
         <hr className="Lines" />
         <form className="MachinesForms">
@@ -331,9 +332,6 @@ class EnigmaM3NavyUseEightRotors extends Component {
               <option value="3">III</option>
               <option value="4">IV</option>
               <option value="5">V</option>
-              <option value="6">VI</option>
-              <option value="7">VII</option>
-              <option value="8">VIII</option>
             </select>
             <select id="rotor_2" name="rotorTwo" type="number" value={this.state.request.rotorTwo} onChange={this.changeR2Handler}>
               <option value="1">I</option>
@@ -341,9 +339,6 @@ class EnigmaM3NavyUseEightRotors extends Component {
               <option value="3">III</option>
               <option value="4">IV</option>
               <option value="5">V</option>
-              <option value="6">VI</option>
-              <option value="7">VII</option>
-              <option value="8">VIII</option>
             </select>
             <select id="rotor_3" name="rotorThree" type="number" value={this.state.request.rotorThree} onChange={this.changeR3Handler}>
               <option value="1">I</option>
@@ -351,9 +346,6 @@ class EnigmaM3NavyUseEightRotors extends Component {
               <option value="3">III</option>
               <option value="4">IV</option>
               <option value="5">V</option>
-              <option value="6">VI</option>
-              <option value="7">VII</option>
-              <option value="8">VIII</option>
             </select>
           </div>
           <div className="ThreeRotorsWheelSet">
@@ -1056,9 +1048,8 @@ class EnigmaM3NavyUseEightRotors extends Component {
           <hr className="LinesInternal" />
           <div className="MessageRequestResponse">
             <textarea rows="4" cols="50" name="message" value={this.state.request.message} onChange={this.changeMessageHandler}></textarea>
-            <br></br><button type="submit" onClick={this.submitHandler}>Submit</button><br></br>
-            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage"
-              value={this.state.responseMessage} readOnly></textarea>
+            <button type="submit" onClick={this.submitHandler}>Submit</button>
+            <textarea rows="4" cols="50" name="responseMessage" id="responseMessage" value={this.state.responseMessage} readOnly></textarea>
           </div>
         </form>
       </div>
@@ -1066,4 +1057,4 @@ class EnigmaM3NavyUseEightRotors extends Component {
   }
 }
 
-export { EnigmaM3NavyUseEightRotors };
+export { EnigmaM3ArmyUse };
