@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2818c0a25a762602c986894ddd2efc0",
+    "revision": "c786ae4cc8e1d6ef86f7fb6a91fbc13c",
     "url": "/Web-Encryptor/index.html"
   },
   {
-    "revision": "2237f29ed1a6704506eb",
-    "url": "/Web-Encryptor/static/css/main.ff0db4d0.chunk.css"
+    "revision": "c1488d911ca615c607e7",
+    "url": "/Web-Encryptor/static/css/main.bf5664ae.chunk.css"
   },
   {
     "revision": "ce5e6eec20e26d9b8576",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Web-Encryptor/static/js/2.065bd6cc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2237f29ed1a6704506eb",
+    "revision": "c1488d911ca615c607e7",
     "url": "/Web-Encryptor/static/js/main.fdb7a50c.chunk.js"
   },
   {

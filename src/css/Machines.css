@@ -51,6 +51,13 @@
     position: absolute;
   }
   
+  .Lines{
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 255);
+    border-radius: 5px;
+  }
+
   .LinesInternal{
     width: 90%;
     margin: auto;

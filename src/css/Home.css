@@ -15,13 +15,13 @@
 }
 
 .Home h1 {
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1.4rem + 2vw);
   padding: 2% 5% 2% 5%;
   text-transform: capitalize;
 }
 
 .Home h2 {
-  font-size: calc(0.4rem + 1.5vw);
+  font-size: calc(1rem + 0.4vw);
   padding: 1% 5% 2% 5%;
   text-align: justify;
 }
