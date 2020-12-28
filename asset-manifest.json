@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Web-Encryptor/static/css/main.a252b634.chunk.css",
-    "main.js": "/Web-Encryptor/static/js/main.56a711f2.chunk.js",
-    "main.js.map": "/Web-Encryptor/static/js/main.56a711f2.chunk.js.map",
+    "main.css": "/Web-Encryptor/static/css/main.542a90d5.chunk.css",
+    "main.js": "/Web-Encryptor/static/js/main.f5fc872d.chunk.js",
+    "main.js.map": "/Web-Encryptor/static/js/main.f5fc872d.chunk.js.map",
     "runtime-main.js": "/Web-Encryptor/static/js/runtime-main.d71c72f2.js",
     "runtime-main.js.map": "/Web-Encryptor/static/js/runtime-main.d71c72f2.js.map",
     "static/js/2.065bd6cc.chunk.js": "/Web-Encryptor/static/js/2.065bd6cc.chunk.js",
     "static/js/2.065bd6cc.chunk.js.map": "/Web-Encryptor/static/js/2.065bd6cc.chunk.js.map",
     "index.html": "/Web-Encryptor/index.html",
-    "precache-manifest.f6b0fb42c92bed4c5500c7c7bdd06970.js": "/Web-Encryptor/precache-manifest.f6b0fb42c92bed4c5500c7c7bdd06970.js",
+    "precache-manifest.79bc7c286285b8cbcf4973081f3116d1.js": "/Web-Encryptor/precache-manifest.79bc7c286285b8cbcf4973081f3116d1.js",
     "service-worker.js": "/Web-Encryptor/service-worker.js",
-    "static/css/main.a252b634.chunk.css.map": "/Web-Encryptor/static/css/main.a252b634.chunk.css.map",
+    "static/css/main.542a90d5.chunk.css.map": "/Web-Encryptor/static/css/main.542a90d5.chunk.css.map",
     "static/js/2.065bd6cc.chunk.js.LICENSE.txt": "/Web-Encryptor/static/js/2.065bd6cc.chunk.js.LICENSE.txt",
     "static/media/home.png": "/Web-Encryptor/static/media/home.3e113c88.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d71c72f2.js",
     "static/js/2.065bd6cc.chunk.js",
-    "static/css/main.a252b634.chunk.css",
-    "static/js/main.56a711f2.chunk.js"
+    "static/css/main.542a90d5.chunk.css",
+    "static/js/main.f5fc872d.chunk.js"
   ]
 }
