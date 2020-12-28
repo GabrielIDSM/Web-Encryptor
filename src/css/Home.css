@@ -36,7 +36,6 @@
 }
 
 .Home-ul li{
-  text-transform: uppercase;
   width: 30%;
   text-align: center;
   display: block;
@@ -48,4 +47,5 @@
   color: white;
   display: block;
   height: 100%;
+  font-size: calc(1rem + 0.4vw);
 }
