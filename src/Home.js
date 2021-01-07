@@ -8,7 +8,7 @@ class Home extends Component {
                 <Navbar />
                 <div className="MainImgDiv">
                     <div className="MainImgDivContent">
-                        <h1>Learn about the enigma machine and cryptography with web encryptor!</h1>
+                        <h1>Learn about the enigma machine with web encryptor!</h1>
                     </div>
                 </div>
                 <h2>The Web Encryptor is a personal project developed by Gabriel Inácio. The project has 7 machines available and 15 ways to use them. All information about the machines was provided by Crypto Museum Website.</h2>

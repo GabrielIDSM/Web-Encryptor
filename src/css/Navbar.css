@@ -39,8 +39,7 @@
   .links li ul{
     margin-top: calc(0rem + 0.5vw);
     padding: 1rem 0rem 0.4rem 0rem;
-    font-size: calc(1.5rem - 0.55vw);
-    font-weight: bolder;
+    font-size: calc(0.9rem + 0.4vw);
     position: absolute;
     width: 100%;
     left: 0%;
