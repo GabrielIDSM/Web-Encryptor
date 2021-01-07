@@ -6,24 +6,29 @@
   color: white
 }
 
-.MainImg{
-  display: block;
+.MainImgDiv{
   width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
+  height: 32rem;
+  background-image: url('../images/home.png');
+  background-position: center;
+  background-size: cover;
 }
 
-.Home h1 {
-  font-size: calc(1.4rem + 2vw);
-  padding: 2% 5% 2% 5%;
+.MainImgDivContent{
+  padding-top: 12%;
+}
+
+.MainImgDivContent h1 {
+  font-size: calc(2.4rem + 2vw);
   text-transform: capitalize;
   text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1%;
 }
 
 .Home h2 {
   font-size: calc(1rem + 0.4vw);
-  padding: 1% 5% 2% 5%;
+  padding: 4% 5% 2% 5%;
   text-align: justify;
 }
 
