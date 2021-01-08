@@ -32,14 +32,14 @@
   }
   
   .Title{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     font-size: calc(0.75rem + 1.2vw);
   }
 
   .links li ul{
     margin-top: calc(0rem + 0.5vw);
     padding: 1rem 0rem 0.4rem 0rem;
-    font-size: calc(0.9rem + 0.4vw);
+    font-size: calc(1rem + 0.4vw);
     position: absolute;
     width: 100%;
     left: 0%;

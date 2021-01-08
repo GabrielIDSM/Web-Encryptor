@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
   return (
     <nav className="Navbar">
-      <p className="Title"><b>Web Encryptor</b></p>
+      <p className="Title"><b>WE</b></p>
       <ul className="Navlinks">
         <Link className="links" to="/">
           <li>HOME</li>

@@ -21,7 +21,7 @@
 }
 
 .MainImgDivContent h1 {
-  font-size: calc(2.4rem + 2vw);
+  font-size: calc(1.5rem + 3.5vw);
   text-transform: capitalize;
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
