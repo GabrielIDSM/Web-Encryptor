@@ -6,6 +6,7 @@ import './css/App.css';
 import './css/Navbar.css';
 import './css/Machines.css';
 import './css/Home.css';
+import './css/About.css';
 
 ReactDOM.render(
   <React.StrictMode>

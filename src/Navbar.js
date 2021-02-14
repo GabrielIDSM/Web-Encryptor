@@ -5,13 +5,12 @@ class Navbar extends Component {
   render() {
   return (
     <nav className="Navbar">
-      <p className="Title"><b>WE</b></p>
       <ul className="Navlinks">
         <Link className="links" to="/">
-          <li>HOME</li>
+          <li>Home</li>
         </Link>
         <div className="links">
-          <li><label>TRY</label>
+          <li><label>List</label>
             <ul>
               <Link to="/enigmaone">
                 <li className="MachinesListUnique">One</li>
@@ -61,6 +60,9 @@ class Navbar extends Component {
             </ul>
           </li>
         </div>
+        <Link className="links" to="/about">
+          <li>About</li>
+        </Link>
       </ul>
     </nav>
   );

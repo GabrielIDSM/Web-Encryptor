@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home } from './Home';
+import { About } from './About';
 import { EnigmaSwissKCommercial } from './machines/EnigmaSwissKCommercial'
 import { EnigmaSwissKAirForce } from './machines/EnigmaSwissKAirForce'
 import { EnigmaRailway } from './machines/EnigmaRailway'
@@ -23,6 +24,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="/" exact component={ Home }/>
+          <Route path="/about" exact component={ About }/>
           <Route path="/enigmaswisskcommercial" exact component={ EnigmaSwissKCommercial }/>
           <Route path="/enigmaswisskairforce" exact component={ EnigmaSwissKAirForce }/>
           <Route path="/enigmarailway" exact component={ EnigmaRailway }/>

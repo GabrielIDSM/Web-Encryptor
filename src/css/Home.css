@@ -2,58 +2,66 @@
   width: 100%;
   min-height: 100vh;
   position: absolute;
-  background-color: rgb(0, 90, 255);
+  background-color: rgb(30, 30, 30);
   color: white
 }
 
 .MainImgDiv{
   width: 100%;
-  height: 32rem;
-  background-image: url('../images/home.png');
+  height: 100vh;
+
+  background-image: url('../images/home.jpeg');
   background-position: center;
   background-size: cover;
+
+  position: relative;
 }
 
-.MainImgDivContent{
-  max-width: 100%;
-  max-height: 100%;
-  padding:  calc((32rem - (2*(2.4rem + 2vw) + 2%)) / 2) 0%;
+.InternalMainImgDiv{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  max-width: 800px;
+  width: 80vw;
+
+  padding: 1vh 1vw;
+
+  position:absolute;
+  left:50%;
+  top:50%;
+
+  transform: translate(-50%,-50%);
 }
 
-.MainImgDivContent h1 {
-  font-size: calc(1.5rem + 3.5vw);
+.InternalMainImgDiv h2 {
+  font-size: calc(2.5rem + 0.75vw);
   text-transform: capitalize;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 1%;
+  color: rgb(255, 255, 255);
+  padding-bottom: 0.75rem;
 }
 
-.Home h2 {
-  font-size: calc(1rem + 0.4vw);
-  padding: 4% 5% 2% 5%;
-  text-align: justify;
-}
-
-.Home-ul{
-  padding: 1% 5% 2% 5%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(0.5rem + 0.8vw);
-  font-weight: bolder;
+.InternalMainImgDiv ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.Home-ul li{
-  width: 30%;
+.InternalMainImgDiv ul li {
+  color: rgb(255, 255, 255);
+  font-size: calc(0.75rem + 0.75vw);
   text-align: center;
-  display: block;
-  padding: 4px 0px 4px 0px;
-  background-color: rgb(0, 0, 40);
+  width: 21vw;
+  max-width: 210px;
+  padding: 0.75vh 0;
+  margin: 0.75vh 0;
 }
 
-.Home-ul a{
-  color: white;
-  display: block;
-  height: 100%;
-  font-size: calc(1rem + 0.4vw);
+.InternalMainImgDiv ul li:hover {
+  background: rgb(30, 30, 30);
+  border-radius: 10px;
 }

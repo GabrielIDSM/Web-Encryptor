@@ -1,0 +1,63 @@
+.AboutDiv {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+    color: white
+}
+
+.AboutMainImgDiv {
+    width: 100%;
+    height: calc(100vh - (2.9rem + 0.5vw));
+    background-image: url('../images/about.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.AboutInternalMainImgDiv {
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6px);
+    -webkit-backdrop-filter: blur( 6px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    max-width: 800px;
+    width: 80vw;
+    padding: 1vh 1vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.AboutInternalMainImgDiv h2 {
+    font-size: calc(1rem + 0.75vw);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0.75rem;
+}
+
+.AboutInternalMainImgDiv ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AboutInternalMainImgDiv ul li {
+    font-size: calc(0.75rem + 0.75vw);
+    text-align: center;
+    width: 21vw;
+    max-width: 210px;
+    padding: 0.75vh 0;
+    margin: 0.75vh 0;
+}
+
+.AboutInternalMainImgDiv ul li a {
+    color: white;
+}
+
+.AboutInternalMainImgDiv ul li:hover {
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+}
