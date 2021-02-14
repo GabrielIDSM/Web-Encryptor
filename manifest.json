@@ -3,7 +3,7 @@
   "name": "React App",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#005aff",
+  "theme_color": "#1e1e1e",
   "background_color": "#ffffff"
 }
   
