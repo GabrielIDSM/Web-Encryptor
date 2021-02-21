@@ -26,29 +26,41 @@
   .EnigmaModelTypeOne{
     width: 100%;
     min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 0.15%;
     background-color: rgb(200, 200, 200);
-    position: absolute;
+    position: relative;
   }
   
   .EnigmaModelTypeTwo{
     width: 100%;
     min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 0.15%;
     background-color: rgb(200, 200, 200);
-    position: absolute;
+    position: relative;
   }
   
   .EnigmaModelTypeThree{
     width: 100%;
     min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 0.15%;
     background-color: rgb(200, 200, 200);
-    position: absolute;
+    position: relative;
   }
   
   .EnigmaModelTypeFour{
     width: 100%;
     min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 0.15%;
     background-color: rgb(200, 200, 200);
-    position: absolute;
+    position: relative;
   }
   
   .Lines{
