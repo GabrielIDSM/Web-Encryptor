@@ -8,7 +8,7 @@ class Home extends Component {
                 <div className="MainImgDiv">
                     <div className="MainImgDivContent">
                         <div className="InternalMainImgDiv">
-                            <h2>Learn about the enigma machine with web encryptor!</h2>
+                            <h2>Learn about the enigma machine!</h2>
                             <ul>
                             <Link to="/enigmaone">
                                 <li>One</li>
